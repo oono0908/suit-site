@@ -1,0 +1,347 @@
+@use "../base/base";
+@use "../global" as *;
+
+.mv{
+  width: 100%;
+  height: 100vh;
+}
+
+.mv__inner{
+  width: 100%;
+  position: relative;
+  height: inherit;
+}
+
+.swiper{
+  height: inherit;
+}
+
+.swiper-wrapper{
+  height: inherit;
+}
+
+.swiper-slide{
+  height: inherit;
+}
+
+.swiper-slide picture, .swiper-slide img{
+  height: inherit;
+}
+
+.swiper-slide img{
+  object-fit: cover;
+}
+
+.mv__title-wrap{
+  position: absolute;
+  top: 50%;
+  left: 120px;
+  transform: translateY(-50%);
+  z-index: 10;
+  @include mq("md"){
+    left: 34px;
+  }
+}
+
+.mv__title-large{
+  font-size: 36px;
+  font-weight: $medium;
+  letter-spacing: 0.05em;
+  line-height: 1.474em;
+  @include mq("md"){
+    font-size: 28px;
+  }
+}
+
+.mv__title-small{
+  font-size: 15px;
+  color: $black;
+  margin-top: 20px;
+  @include mq("md"){
+    font-size: 14px;
+  }
+}
+
+// concept
+.concept{
+   margin-top: 133px;
+}
+.concept__inner{
+  max-width: 1115px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 25px 40px 25px;
+}
+
+.concept__inner::after{
+  content: "";
+  position: absolute;
+  background-color: $white2;
+  height: 720px;
+  width: 280px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  @include mq("md"){
+    width: 50%;
+    height: 100%;
+    top: 6%;
+  }
+}
+
+.concept__img{
+  max-width: 1030px;
+  margin-top: 42px;
+}
+
+.concept__contents{
+  margin-top: 42px;
+}
+
+.concept__info-main{
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  line-height: 1.727;
+  @include mq("md"){
+    font-size: 18px;
+  }
+}
+
+.concept__info-sub {
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 1.867;
+  margin-top: 32px;
+  @include mq("md"){
+    font-size: 14px;
+  }
+}
+
+// service
+.service{
+  margin-top: 150px;
+  width: 100%;
+  position: relative;
+  &::before{
+    content: "";
+    background-color: $white2;
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    @include mq("md"){
+      content: "";
+      position: absolute;
+      background-color: $white2;
+      height: 100%;
+      width: 50%;
+      left: 0;
+      top: 3%;
+      transform: translate(0, 0);
+      z-index: -1;
+    }
+  }
+}
+
+.section__inner{
+  padding: 0 25px;
+  @include mq("md"){
+    padding: 0 15px;
+  }
+}
+
+.section__cards{
+  padding: 0 62px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  height: auto;
+  max-width: 1115px;
+  margin: 42px auto 0;
+  @include mq("md"){
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+}
+
+.section__card{
+  box-shadow: 3px 3px 8px #707070;
+  background-color: $white;
+}
+.card__body{
+  padding: 0 10px 10px 10px;
+  width: 100%;
+}
+
+.card__text{
+  font-size: 16px;
+  color: $black;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.card__name{
+  margin-top: 20px;
+  font-size: 10px;
+  background-color: $pink2;
+  padding: 5px 0;
+  width: 53px;
+  color: $white;
+  margin-right: 0;
+  margin-left: auto;
+  display: block;
+  text-align: center;
+}
+
+// access
+.access{
+  margin-top: 150px;
+}
+
+.access__inner{
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  padding: 0 25px;
+  @include mq("md"){
+    padding: 0 15px;
+  }
+}
+
+.access__items{
+  margin-top: 46px;
+  width: 100%;
+}
+
+.access__item{
+  border-bottom: 1px solid $pink;
+  padding-bottom: 17px;
+}
+
+.access__item:not(:first-child){
+  margin-top: 17px;
+}
+
+.access__item dl{
+  display: flex;
+  @include mq("md"){
+    display: block;
+  }
+}
+
+.access__map{
+  // max-width: 1440px;
+  margin: 20px auto 0;
+  height: 420px;
+}
+
+.access__map iframe{
+  width: 100%;
+  height: 100%;
+}
+
+
+.item__title{
+  color: $black;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  width: 300px;
+  @include mq("md"){
+    width: 100%;
+  }
+}
+
+.item__text{
+  color: $black;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+
+.contact{
+  background-image: url("../../img/contact-bgimg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  @include mq("md"){
+    background-image: url("../../img/contact-bgimg-sp.jpg");
+  }
+}
+
+.contact__inner{
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 80px 25px 150px;
+  padding: 60px 15px 130px;
+}
+
+
+.contact__btn-wrap{
+  margin: 70px auto 0;
+  text-align: center;
+}
+
+.btn__text{
+  color: $white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.btn__link{
+  width: 340px;
+  display: inline-block;
+  padding: 30px 0;
+  text-align: center;
+  color: $white;
+  font-size: 16px;
+  margin-top: 20px;
+  border: 1px solid $white;
+  letter-spacing: 0.05em;
+  position: relative;
+  &:after{
+    content: "";
+    width: 10px;
+    height: 1px;
+    transform: rotate(45deg);
+    bottom: 53%;
+    right: 30px;
+    background-color: $white;
+    position: absolute;
+  }
+  &:before{
+    content: "";
+    width: 10px;
+    height: 1px;
+    transform: rotate(-45deg);
+    top: 53%;
+    right: 30px;
+    background-color: $white;
+    position: absolute;
+  }
+  &:hover{
+    letter-spacing: 0.3em;
+    transition:0.5s all;
+  }
+  @include mq("md"){
+    padding: 20px 0;
+    width: 260px;
+  }
+}
+
+// top-btn
+.top-btn{
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 1000;
+  cursor: pointer;
+  @include mq("md"){
+    bottom: 50px;
+    right: 30px;
+  }
+}

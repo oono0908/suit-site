@@ -1,0 +1,51 @@
+header.header.js-header
+  .header__inner
+    h1.header__title
+      if page === 'top'
+        img.header-title__img(src='./img/title.svg', alt='タイトル')
+      else
+        img.header-title__img(src='../img/title.svg', alt='タイトル')
+    ul.header__items.md-none
+      if page === "top"
+        li.header__item
+          a.header__link.js-header__link(href="#concept") Concept
+        li.header__item
+          a.header__link.js-header__link(href="#service") Service
+        li.header__item
+          a.header__link.js-header__link(href="#access") Access
+        li.header__item
+          a.header__link.header__link--contact(href="contact") Contact
+      else
+        li.header__item
+          a.header__link.js-header__link(href="../index.html#concept") Concept
+        li.header__item
+          a.header__link.js-header__link(href="../index.html#service") Service
+        li.header__item
+          a.header__link.js-header__link(href="../index.html#access") Access
+        li.header__item
+          a.header__link.header__link--contact(href="contact") Contact
+    .hamberger.md-show.js-hamberger
+      span
+      span
+      span
+    .drawer.js-drawer
+      .drawer__inner
+        ul.drawer__items
+          if page === "top"
+            li.drawer__item.js-drawer__item
+              a.drawer__link(href="#concept") Concept
+            li.drawer__item.js-drawer__item
+              a.drawer__link(href="#service") Service
+            li.drawer__item.js-drawer__item
+              a.drawer__link(href="#access") Access
+            li.drawer__item.js-drawer__item
+              a.drawer__link.drawer__link--contact(href="#contact") Contact
+          else
+            li.drawer__item.js-drawer__item
+              a.drawer__link(href="../index.html#concept") Concept
+            li.drawer__item.js-drawer__item
+              a.drawer__link(href="../index.html#service") Service
+            li.drawer__item.js-drawer__item
+              a.drawer__link(href="../index.html#access") Access
+            li.drawer__item.js-drawer__item
+              a.drawer__link.drawer__link--contact(href="#contact") Contact

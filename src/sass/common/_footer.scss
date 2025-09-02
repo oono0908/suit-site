@@ -1,0 +1,20 @@
+@use "../base/base";
+@use "../global" as *;
+
+.footer{
+  background-color: $red2;
+}
+
+.footer__inner{
+  padding: 31px 0;
+  font-size: 14px;
+  @include mq("md"){
+    padding: 21px 0;
+    font-size: 14px;
+  }
+}
+
+.footer__text{
+  text-align: center;
+  color: $white;
+}
