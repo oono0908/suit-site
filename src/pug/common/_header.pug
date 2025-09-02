@@ -8,22 +8,20 @@ header.header.js-header
     ul.header__items.md-none
       if page === "top"
         li.header__item
-          a.header__link.js-header__link(href="#concept") Concept
+          a.header__link.js-header__link(href="#concept") About
         li.header__item
           a.header__link.js-header__link(href="#service") Service
         li.header__item
-          a.header__link.js-header__link(href="#access") Access
-        li.header__item
-          a.header__link.header__link--contact(href="contact") Contact
+          a.header__link.js-header__link(href="#access") News
       else
         li.header__item
-          a.header__link.js-header__link(href="../index.html#concept") Concept
+          a.header__link.js-header__link(href="../index.html#concept") About
         li.header__item
           a.header__link.js-header__link(href="../index.html#service") Service
         li.header__item
-          a.header__link.js-header__link(href="../index.html#access") Access
-        li.header__item
-          a.header__link.header__link--contact(href="contact") Contact
+          a.header__link.js-header__link(href="../index.html#access") News
+    .header__contact-btn.btn
+       a.header__contact-link(href="contact") Contact
     .hamberger.md-show.js-hamberger
       span
       span
@@ -33,19 +31,17 @@ header.header.js-header
         ul.drawer__items
           if page === "top"
             li.drawer__item.js-drawer__item
-              a.drawer__link(href="#concept") Concept
+              a.drawer__link(href="#concept") About
             li.drawer__item.js-drawer__item
               a.drawer__link(href="#service") Service
             li.drawer__item.js-drawer__item
-              a.drawer__link(href="#access") Access
-            li.drawer__item.js-drawer__item
-              a.drawer__link.drawer__link--contact(href="#contact") Contact
+              a.drawer__link(href="#access") News
           else
             li.drawer__item.js-drawer__item
-              a.drawer__link(href="../index.html#concept") Concept
+              a.drawer__link(href="../index.html#concept") About
             li.drawer__item.js-drawer__item
               a.drawer__link(href="../index.html#service") Service
             li.drawer__item.js-drawer__item
-              a.drawer__link(href="../index.html#access") Access
-            li.drawer__item.js-drawer__item
-              a.drawer__link.drawer__link--contact(href="#contact") Contact
+              a.drawer__link(href="../index.html#access") News
+        .drawer__contact-btn.btn
+          a.drawer__contact-link(href="contact") Contact
