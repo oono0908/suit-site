@@ -46,14 +46,14 @@
 
 .md-none{
   @include mq("md"){
-    display: none;
+    display: none !important;
   }
 }
 
 .md-show{
-  display: none;
+  display: none !important;
   @include mq("md"){
-    display: block;
+    display: block !important;
   }
 }
 

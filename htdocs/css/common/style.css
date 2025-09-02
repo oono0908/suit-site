@@ -30,7 +30,6 @@ a:hover {
   top: 0;
   left: 0;
   background-color: transparent;
-  background-color: red;
 }
 
 .header__inner {
@@ -255,15 +254,15 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   .md-none {
-    display: none;
+    display: none !important;
   }
 }
 
 .md-show {
-  display: none;
+  display: none !important;
 }
 @media screen and (max-width: 768px) {
   .md-show {
-    display: block;
+    display: block !important;
   }
 }
