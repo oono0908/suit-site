@@ -17,7 +17,7 @@ const src = {
   pug: ['src/pug/**/*.pug', '!src/pug/**/_*.pug'],
   pugbase: './src/pug',
   pugwatch: 'src/pug/**/*.pug',
-  sass: ['./src/sass/**/*.scss', '!./src/sass/**/_*.scss'],
+  sass: ['./src/sass/**/*.scss'],
   sasswatch: './src/sass/**/*.scss',
   img:'./src/img/**/*',
   js: './src/js/**/*'

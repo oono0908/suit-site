@@ -2,28 +2,27 @@
 @use "../global" as *;
 
 .header{
-  height: 71px;
+  height: 95px;
   position: fixed;
   z-index: 500;
   width: 100%;
   top: 0;
   left: 0;
   background-color: transparent;
+  background-color: red;
 }
 
 .header__inner{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: inherit;
   width: 100%;
 }
 
-
-
 .header__title{
   width: 171px;
   margin-left: 22px;
-  margin-right: auto;
 }
 
 .header__items{
@@ -37,25 +36,34 @@
 }
 
 .header__link{
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.313;
-  color: $black;
+  color: $white;
   font-size: $medium;
-  display: inline-block;
   cursor: pointer;
   display: flex;
   align-items: center;
   height: inherit;
+  font-family: "Cormorant", sans-serif;
+  column-gap: 55px;
 }
 
 .header__item:not(:first-child){
   margin-left: 60px;
 }
 
-.header__link--contact{
-  background-color: $pink2;
+.header__contact-btn{
+  width: 121px;
+  margin-right: 22px;
+}
+
+.header__contact-link{
   color: $white;
-  padding: 24px 26px;
+  width: 100%;
+  height: inherit;
+  display: inline-block;
+  padding: 12px 0;
+  font-family: "Cormorant", sans-serif;
 }
 
 // hamberger
@@ -64,14 +72,14 @@
   height: 16px;
   position: relative;
   margin-right: 15px;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .hamberger span{
   position: absolute;
   width: 25px;
   height: 2px;
-  background-color: $black;
+  background-color: $white;
 }
 
 .hamberger span:first-child{
@@ -109,7 +117,7 @@
 .drawer{
   height: 100vh;
   width: 100%;
-  background-color: $black;
+  background-color: $gray2;
   opacity: 0.8;
   position: absolute;
   top: 0;
@@ -122,23 +130,46 @@
   align-items: center;
   justify-content: center;
   height: inherit;
+  flex-direction: column;
 }
 
 .drawer__link{
   color: $white;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.05em;
   text-align: center;
   display: inline-block;
   width: 100%;
+  font-family: "Cormorant", sans-serif;
+  position: relative;
+  margin-left: 10px;
+  &::after{
+    content: "";
+    position: absolute;
+    left: -22px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background: url("../../img/section-title-logo.svg") no-repeat center / contain;
+  }
 }
 
 .drawer__item:not(:first-child){
   margin-top: 50px;
 }
 
-.drawer__link--contact{
-  background-color: $pink2;
+.drawer__contact-btn{
+  width: 200px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.drawer__contact-link{
+  padding: 14px 0;
   color: $white;
-  padding: 24px 26px;
+  font-family: "Cormorant", sans-serif;
+  width: 100%;
+  height: inherit;
+  display: inline-block;
 }

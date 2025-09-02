@@ -1,5 +1,8 @@
 @use "../base/base";
 @use "../global" as *;
+@use "header";
+@use "footer";
+
 
 .section-title{
   font-family: "Cormorant", sans-serif;
@@ -31,7 +34,28 @@
   }
 }
 
+.btn{
+  border: 1px solid $white;
+  text-align: center;
+}
+
 .inner{
   min-width: 1150px;
   margin: 0 auto;
 }
+
+.md-none{
+  @include mq("md"){
+    display: none;
+  }
+}
+
+.md-show{
+  display: none;
+  @include mq("md"){
+    display: block;
+  }
+}
+
+
+
