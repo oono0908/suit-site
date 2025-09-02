@@ -3,23 +3,32 @@ block var
 doctype
 html(lang="ja")
   head
-    meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    meta(name="description", content="")
-    meta(name="keywords", content="")
-    meta(name="author", content="")
-    meta(property="og:title", content="タイトル")
-    meta(property="og:type", content="website")
-    meta(property="og:url", content="http://任意のURL")
-    meta(property="og:image", content="http://任意のURL/og_image.png")
-    meta(property="og:site_name", content="")
-    meta(property="og:description", content="")
-    meta(property="fb:app_id", content="任意のID")
-    title タイトル
+    meta(name="robots" content="noindex,nofollow")
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1.0")
+    meta(name="format-detection" content="telephone=no")
+    // meta情報
+    title ExciteCode
+    meta(name="description" content="ExciteCodeは、伝統あるテーラーだからできる、芯地や裏地など、細部へこだわります。わたしたちはワンランク上のオーダースーツをお約束します。")
+    meta(name="keywords" content="ExciteCode,オーダーメイドスーツ,ネクタイ")
+    // ogp
+    meta(property="og:title" content="ExciteCode")
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="")
+    meta(property="og:image" content="")
+    meta(property="og:site_name" content="ExciteCode")
+    meta(property="og:description" content="ExciteCodeは、伝統あるテーラーだからできる、芯地や裏地など、細部へこだわります。わたしたちはワンランク上のオーダースーツをお約束します。")
+    meta(name="twitter:card" content="summary")
+    // ファビコン
+    link(rel="icon" href="../img/favicon.ico")
+    link(rel="apple-touch-icon" href="../img/apple-touch-icon.png" sizes="180*180")
+    // Google Fonts
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Noto+Sans+JP:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet")
     block css
       link(rel='stylesheet', href="../css/reset.css")
-      link(rel='stylesheet', href="../css/style.css")
+      link(rel='stylesheet', href="../css/common/style.css")
     block js
 
   body
