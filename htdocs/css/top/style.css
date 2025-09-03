@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", "Noto Sans JP", sans-serif;
+  font-family: "Roboto", "Noto Serif JP", sans-serif;
 }
 
 a[href^="tel:"] {
@@ -78,7 +78,6 @@ a:hover {
   color: #F9F2E5;
   letter-spacing: 0.12em;
   margin-top: 17px;
-  font-family: "Cormorant", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .mv__title-sub {
@@ -192,7 +191,6 @@ a:hover {
   color: #F9F2E5;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  font-family: "Noto Serif JP", serif;
   color: #F9F2E5;
   letter-spacing: 0.5em;
   line-height: 2;
@@ -214,7 +212,6 @@ a:hover {
 
 .about__content-text-sub {
   width: 600px;
-  font-family: "Noto Serif JP", serif;
   line-height: 2;
   font-size: 16px;
   font-weight: 300;
@@ -257,4 +254,103 @@ a:hover {
     padding: 13px 0;
     font-size: 14px;
   }
+}
+
+.service {
+  background-color: #222222;
+  width: 100%;
+}
+
+.service__title {
+  margin: 52px auto 0;
+  display: flex;
+  column-gap: 60px;
+  justify-content: center;
+  align-items: center;
+  color: #F9F2E5;
+}
+
+.service__title-btn {
+  font-size: 16px;
+  color: #F9F2E5;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 2;
+  position: relative;
+}
+
+.service__title-btn::after {
+  width: 170px;
+  background-color: #F9F2E5;
+  height: 1px;
+  content: "";
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.35s ease;
+}
+.service__title-btn.is-active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.service__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  max-width: 1030px;
+  margin: 60px auto 0;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .service__cards {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+}
+
+.service__cards.is-active {
+  display: grid;
+}
+
+.card__img-content {
+  position: relative;
+}
+
+.card__type {
+  color: #F9F2E5;
+  width: 80px;
+  padding: 7px 0;
+  background-color: #332F27;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Cormorant", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.service__body {
+  padding: 20px 15px;
+}
+
+.service__text-large {
+  font-size: 16px;
+  font-weight: 300;
+  color: #F9F2E5;
+  letter-spacing: 0.05em;
+}
+
+.service__text-small {
+  font-size: 14px;
+  color: #F9F2E5;
+  letter-spacing: 0.05em;
+  line-height: 2;
+  margin-top: 13px;
+  font-family: "Noto sans jp";
+  font-weight: 300;
 }
