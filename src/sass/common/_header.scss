@@ -37,7 +37,7 @@
 .header__link{
   font-size: 18px;
   line-height: 1.313;
-  color: $white;
+  color: $skin;
   font-size: $medium;
   cursor: pointer;
   display: flex;
@@ -57,7 +57,7 @@
 }
 
 .header__contact-link{
-  color: $white;
+  color: $skin;
   width: 100%;
   height: inherit;
   display: inline-block;
@@ -78,7 +78,7 @@
   position: absolute;
   width: 25px;
   height: 2px;
-  background-color: $white;
+  background-color: $skin;
 }
 
 .hamberger span:first-child{
@@ -99,7 +99,7 @@
 .hamberger.is-active span:first-child{
   top: 15px;
   transform: rotate(45deg);
-  background-color: $white;
+  background-color: $skin;
 }
 
 .hamberger.is-active span:nth-child(2){
@@ -109,7 +109,7 @@
 .hamberger.is-active span:nth-child(3){
   top: 15px;
   transform: rotate(-45deg);
-  background-color: $white;
+  background-color: $skin;
 }
 
 // drawer
@@ -133,7 +133,7 @@
 }
 
 .drawer__link{
-  color: $white;
+  color: $skin;
   font-size: 18px;
   letter-spacing: 0.05em;
   text-align: center;
@@ -166,7 +166,7 @@
 
 .drawer__contact-link{
   padding: 14px 0;
-  color: $white;
+  color: $skin;
   font-family: "Cormorant", sans-serif;
   width: 100%;
   height: inherit;

@@ -62,7 +62,7 @@ a:hover {
 .mv__title-main {
   font-size: 54px;
   font-weight: 500;
-  color: #fff;
+  color: #F9F2E5;
   letter-spacing: 0.05em;
   font-family: "Cormorant", sans-serif;
 }
@@ -75,7 +75,7 @@ a:hover {
 
 .mv__title-sub {
   font-size: 18px;
-  color: #fff;
+  color: #F9F2E5;
   letter-spacing: 0.12em;
   margin-top: 17px;
   font-family: "Cormorant", sans-serif;
@@ -110,7 +110,7 @@ a:hover {
   position: absolute;
   width: 12px;
   height: 2px;
-  background-color: #fff;
+  background-color: #F9F2E5;
 }
 
 .swiper .swiper-button-next::after {
@@ -148,9 +148,113 @@ a:hover {
 }
 
 .swiper-pagination > .swiper-pagination-bullet-active {
-  background-color: #fff;
+  background-color: #F9F2E5;
 }
 
 .fv_wrapper .swiper-pagination .swiper-pagination-bullet {
   margin: 20px;
+}
+
+.about {
+  background-color: #272625;
+}
+
+.about__contents {
+  display: flex;
+  margin-top: 78px;
+  column-gap: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .about__contents {
+    flex-direction: column-reverse;
+  }
+}
+
+.about__content-img {
+  width: 360px;
+}
+@media screen and (max-width: 768px) {
+  .about__content-img {
+    width: 240px;
+    margin: 50px auto 0;
+  }
+}
+
+.about__content-img img {
+  height: auto;
+}
+
+.about__content-text {
+  font-size: 22px;
+  color: #F9F2E5;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: "Noto Serif JP", serif;
+  color: #F9F2E5;
+  letter-spacing: 0.5em;
+  line-height: 2;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .about__content-text {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+.about__content-text--small {
+  font-size: 14px;
+  letter-spacing: 0.5em;
+  line-height: 2;
+  font-weight: 300;
+}
+
+.about__content-text-sub {
+  width: 600px;
+  font-family: "Noto Serif JP", serif;
+  line-height: 2;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  position: absolute;
+  top: 86%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: #F9F2E5;
+}
+@media screen and (max-width: 768px) {
+  .about__content-text-sub {
+    font-size: 14px;
+    width: 305px;
+    line-height: 1.8;
+  }
+}
+
+.about__btn {
+  width: 200px;
+  margin: 100px auto 0;
+}
+@media screen and (max-width: 768px) {
+  .about__btn {
+    margin: 126px auto 0;
+    width: 173px;
+  }
+}
+
+.about__btn a {
+  color: #F9F2E5;
+  font-size: 16px;
+  padding: 22px 0;
+  display: block;
+  font-weight: 300;
+}
+@media screen and (max-width: 768px) {
+  .about__btn a {
+    padding: 13px 0;
+    font-size: 14px;
+  }
 }

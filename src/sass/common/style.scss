@@ -8,10 +8,13 @@
   font-family: "Cormorant", sans-serif;
   font-size: 38px;
   font-weight: $medium;
-  color: $white;
+  color: $skin;
   position: relative;
   margin-left: 40px;
   letter-spacing: 0.05em;
+  @include mq("md"){
+    font-size: 32px;
+  }
   &::after{
   content: "";
   position: absolute;
@@ -27,22 +30,54 @@
     content: "";
     width: 70%;
     height: 1px;
-    background-color: $white;
+    background-color: $skin;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    @include mq("md"){
+     width: 60%;
+  }
   }
 }
 
 .btn{
-  border: 1px solid $white;
+  border: 1px solid $skin;
   text-align: center;
+  color: $skin;
+}
+
+.btn--arrow{
+  position: relative;
+  &::after,
+  &::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: $skin;
+  }
+}
+
+.btn--arrow{
+  &::after{
+    transform: rotate(-45deg) translateX(-50%);;
+    top: 50%;
+    left: 85%;
+  }
+  &::before{
+    transform: rotate(45deg) translateX(-50%);;
+    top: 50%;
+    left: 85%;
+  }
 }
 
 .inner{
   max-width: 1150px;
   margin: 0 auto;
   padding: 80px 25px;
+  @include mq("md"){
+    padding: 60px 15px;
+  }
 }
 
 .md-none{
