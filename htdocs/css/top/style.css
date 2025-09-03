@@ -278,6 +278,11 @@ a:hover {
   line-height: 2;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .service__title-btn {
+    font-size: 14px;
+  }
+}
 
 .service__title-btn::after {
   width: 170px;
@@ -308,6 +313,7 @@ a:hover {
   .service__cards {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 30px;
+    max-width: 250px;
   }
 }
 
@@ -336,6 +342,8 @@ a:hover {
 
 .service__body {
   padding: 20px 15px;
+  background-color: #222222;
+  box-shadow: 3px 3px 6px rgba(29, 29, 29, 0.75);
 }
 
 .service__text-large {
@@ -343,6 +351,11 @@ a:hover {
   font-weight: 300;
   color: #F9F2E5;
   letter-spacing: 0.05em;
+}
+@media screen and (max-width: 768px) {
+  .service__text-large {
+    font-size: 14px;
+  }
 }
 
 .service__text-small {
@@ -353,4 +366,72 @@ a:hover {
   margin-top: 13px;
   font-family: "Noto sans jp";
   font-weight: 300;
+}
+@media screen and (max-width: 768px) {
+  .service__text-small {
+    font-size: 13px;
+  }
+}
+
+.news__inner {
+  background-color: #BCB5A8;
+}
+
+.news__contents {
+  max-width: 1030px;
+  margin: 40px auto 0;
+}
+@media screen and (max-width: 768px) {
+  .news__contents {
+    max-width: 285px;
+  }
+}
+
+.news__item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #A4A4A0;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .news__item > *:nth-child(3) {
+    margin-left: 0;
+    flex-basis: 100%;
+    margin-top: 28px;
+  }
+}
+
+.news__item:not(:first-child) {
+  margin-top: 24px;
+}
+
+.item__time {
+  width: 100px;
+}
+
+.item__time time {
+  font-size: 14px;
+  color: #222222;
+  font-family: "Noto Sans Jp", sans-serif;
+}
+
+.item__text {
+  width: 88px;
+  padding: 7px 0;
+  display: block;
+  text-align: center;
+  color: #F9F2E5;
+  background-color: #141414;
+  font-family: "Noto Sans Jp", sans-serif;
+  font-size: 11px;
+  margin-left: 30px;
+}
+
+.item__title {
+  font-size: 14px;
+  color: #141414;
+  font-family: "Noto Sans Jp", sans-serif;
+  margin-left: 30px;
 }

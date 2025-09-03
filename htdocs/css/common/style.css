@@ -252,6 +252,17 @@ a:hover {
   }
 }
 
+.section-title--white {
+  color: #141414;
+}
+.section-title--white::after {
+  background: url("../../img/section-title-logo-black.svg") no-repeat center/contain;
+}
+.section-title--white::before {
+  color: #141414;
+  background-color: #141414;
+}
+
 .btn {
   border: 1px solid #F9F2E5;
   text-align: center;

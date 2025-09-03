@@ -40,6 +40,17 @@
   }
 }
 
+.section-title--white{
+  color: $gray;
+  &::after{
+    background: url("../../img/section-title-logo-black.svg") no-repeat center / contain;
+  }
+  &::before{
+    color: $gray;
+    background-color: $gray;
+  }
+}
+
 .btn{
   border: 1px solid $skin;
   text-align: center;
