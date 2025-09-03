@@ -248,8 +248,9 @@ a:hover {
 }
 
 .inner {
-  min-width: 1150px;
+  max-width: 1150px;
   margin: 0 auto;
+  padding: 80px 25px;
 }
 
 @media screen and (max-width: 768px) {
