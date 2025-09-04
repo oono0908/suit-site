@@ -226,7 +226,7 @@ a:hover {
     font-size: 32px;
   }
 }
-.section-title::after {
+.section-title::before {
   content: "";
   position: absolute;
   left: -32px;
@@ -236,29 +236,50 @@ a:hover {
   height: 14px;
   background: url("../../img/section-title-logo.svg") no-repeat center/contain;
 }
-.section-title::before {
+.section-title::after {
   position: absolute;
   content: "";
-  width: 70%;
+  width: 85%;
   height: 1px;
   background-color: #F9F2E5;
-  right: 0;
+  left: 140px;
   top: 50%;
   transform: translateY(-50%);
 }
+@media screen and (max-width: 1024px) {
+  .section-title::after {
+    width: 75%;
+  }
+}
 @media screen and (max-width: 768px) {
-  .section-title::before {
+  .section-title::after {
     width: 60%;
+    left: 120px;
   }
 }
 
-.section-title--white {
+.section-title-line--short::after {
+  width: 60%;
+}
+@media screen and (max-width: 1024px) {
+  .section-title-line--short::after {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-title-line--short::after {
+    width: 60%;
+    left: 120px;
+  }
+}
+
+.section-title--black {
   color: #141414;
 }
-.section-title--white::after {
+.section-title--black::before {
   background: url("../../img/section-title-logo-black.svg") no-repeat center/contain;
 }
-.section-title--white::before {
+.section-title--black::after {
   color: #141414;
   background-color: #141414;
 }

@@ -15,7 +15,7 @@
   @include mq("md"){
     font-size: 32px;
   }
-  &::after{
+  &::before{
   content: "";
   position: absolute;
   left: -32px;
@@ -25,27 +25,44 @@
   height: 14px;
   background: url("../../img/section-title-logo.svg") no-repeat center / contain;
   }
-  &::before{
+  &::after{
     position: absolute;
     content: "";
-    width: 70%;
+    width: 85%;
     height: 1px;
     background-color: $skin;
-    right: 0;
+    left: 140px;
     top: 50%;
     transform: translateY(-50%);
+    @include mq("lg"){
+    width: 75%;
+    }
     @include mq("md"){
      width: 60%;
-  }
+     left: 120px;
+    }
   }
 }
 
-.section-title--white{
-  color: $gray;
+.section-title-line--short{
   &::after{
+    width: 60%;
+    @include mq("lg"){
+      width: 75%;
+    }
+    @include mq("md"){
+      width: 60%;
+      left: 120px;
+    }
+  }
+}
+
+.section-title--black{
+  color: $gray;
+  &::before{
     background: url("../../img/section-title-logo-black.svg") no-repeat center / contain;
   }
-  &::before{
+  &::after{
     color: $gray;
     background-color: $gray;
   }
