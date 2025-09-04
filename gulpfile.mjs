@@ -20,7 +20,7 @@ const src = {
   sass: ['./src/sass/**/*.scss'],
   sasswatch: './src/sass/**/*.scss',
   img:'./src/img/**/*',
-  js: './src/js/**/*'
+  js: './src/js/**/*.js'
 };
  
 const dest = {
