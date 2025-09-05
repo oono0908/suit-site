@@ -33,36 +33,95 @@
   </head>
   <body>
     <header class="header js-header">
-      <div class="header__inner">
-        <h1 class="header__title"><img class="header-title__img" src="../img/title.svg" alt="タイトル">
-        </h1>
+      <div class="header__inner"><a href="../index.html">
+          <h1 class="header__title"><img class="header-title__img" src="../img/title.svg" alt="タイトル"></h1></a>
         <ul class="header__items md-none">
-          <li class="header__item"><a class="header__link js-header__link" href="../index.html#concept">About</a></li>
+          <li class="header__item"><a class="header__link js-header__link" href="../index.html#about">About</a></li>
           <li class="header__item"><a class="header__link js-header__link" href="../index.html#service">Service</a></li>
-          <li class="header__item"><a class="header__link js-header__link" href="../index.html#access">News</a></li>
+          <li class="header__item"><a class="header__link js-header__link" href="../index.html#news">News</a></li>
         </ul>
-        <div class="header__contact-btn btn md-none"><a class="header__contact-link" href="./about/index.html">Contact</a></div>
+        <div class="header__contact-btn btn md-none"><a class="header__contact-link" href="../contact/index.html">Contact</a></div>
         <div class="hamberger md-show js-hamberger"><span></span><span></span><span></span></div>
         <div class="drawer js-drawer">
           <div class="drawer__inner">
             <ul class="drawer__items">
-              <li class="drawer__item js-drawer__item"><a class="drawer__link" href="../index.html#concept">About</a></li>
+              <li class="drawer__item js-drawer__item"><a class="drawer__link" href="../index.html#about">About</a></li>
               <li class="drawer__item js-drawer__item"><a class="drawer__link" href="../index.html#service">Service</a></li>
-              <li class="drawer__item js-drawer__item"><a class="drawer__link" href="../index.html#access">News</a></li>
+              <li class="drawer__item js-drawer__item"><a class="drawer__link" href="../index.html#news">News</a></li>
             </ul>
-            <div class="drawer__contact-btn btn"><a class="drawer__contact-link" href="contact">Contact</a></div>
+            <div class="drawer__contact-btn btn"><a class="drawer__contact-link" href="#contact">Contact</a></div>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <div class="about">
-        <div class="mv">
-          <div class="mv__inner">
-            <h2 class="mv__title">About</h2>
-          </div>
+      <div class="mv">
+        <div class="mv__inner">
+          <h2 class="mv__title">Contact</h2>
         </div>
       </div>
+      <section class="contact">
+        <div class="contact__inner inner">
+          <p class="contact__text">当店へのお問い合わせは下記フォームより受け付けております。<br>担当者が確認後、折り返しご連絡させていただきます。</p>
+          <div class="contact__form-content">
+            <form class="contact__form form" action="">
+              <ul class="form__lists">
+                <li class="form__list">
+                  <dl>
+                    <dt class="form__label">
+                      <p class="form__title">名前</p>
+                    </dt>
+                    <dd class="form__input">
+                      <input class="form__input-text" type="text" placeholder="仕立 一郎" name="名前">
+                    </dd>
+                  </dl>
+                </li>
+                <li class="form__list">
+                  <dl>
+                    <dt class="form__label">
+                      <p class="form__title">メールアドレス</p>
+                    </dt>
+                    <dd class="form__input">
+                      <input class="form__input-text" type="text" placeholder="excitecode@dogstore.co.jp" name="メールアドレス">
+                    </dd>
+                  </dl>
+                </li>
+                <li class="form__radio radio">
+                  <dl>
+                    <dt>
+                      <p class="radio__title">お問い合わせの種類</p>
+                    </dt>
+                    <dd class="radio__input">
+                      <label class="radio__label">
+                        <input class="radio__btn" type="radio" name="お問い合わせの種類">オーダーメードスーツ
+                      </label>
+                      <label class="radio__label">
+                        <input class="radio__btn" type="radio" name="お問い合わせの種類">スーツ以外のアイテム
+                      </label>
+                      <label class="radio__label">
+                        <input class="radio__btn" type="radio" name="お問い合わせの種類">その他
+                      </label>
+                    </dd>
+                  </dl>
+                </li>
+                <li class="form__list">
+                  <dl>
+                    <dt class="form__label">
+                      <p class="form__title">お問い合わせ内容</p>
+                    </dt>
+                    <dd class="form__textarea">
+                      <textarea class="form__textarea-text" type="text" placeholder="入力してください" name="お問い合わせ内容"></textarea>
+                    </dd>
+                  </dl>
+                </li>
+                <div class="contact__btn btn">
+                  <input type="submit" value="送信">
+                </div>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <div class="footer">
       <div class="footer__inner">

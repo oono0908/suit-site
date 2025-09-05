@@ -15,11 +15,87 @@ a[href^="tel:"] {
   }
 }
 
-a {
+a, button {
   transition: opacity 0.3s;
 }
-a:hover {
+a:hover, button:hover {
   opacity: 0.7;
+}
+
+.contact {
+  width: 100%;
+  background-color: #272625;
+}
+@media screen and (max-width: 1024px) {
+  .contact {
+    background-image: url(../../img/contact-img-sp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.contact__inner {
+  display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .contact__inner {
+    display: block;
+  }
+}
+
+.contact__main {
+  padding: 80px 40px 0 120px;
+  width: 55%;
+}
+@media screen and (max-width: 1024px) {
+  .contact__main {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 80px 25px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact__main {
+    padding: 60px 15px;
+  }
+}
+
+.contact__btn-contents {
+  margin: 64px auto 0;
+  text-align: center;
+}
+
+.contact__btn-contents p {
+  color: #F9F2E5;
+  font-size: 14px;
+}
+
+.contact__btn {
+  margin: 20px auto 0;
+  width: 265px;
+  padding: 20px 0;
+  display: block;
+  cursor: pointer;
+}
+
+.contact__img {
+  height: 400px;
+  width: 45%;
+}
+@media screen and (max-width: 1024px) {
+  .contact__img {
+    display: none;
+  }
+}
+
+.contact__img img {
+  height: auto;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .mv {
@@ -28,10 +104,20 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (max-width: 768px) {
+  .mv {
+    background-image: url(../../img/about-mv-sp.jpg);
+  }
+}
 
 .mv__inner {
   padding: 290px 0 190px 0;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .mv__inner {
+    padding: 240px 0 160px 0;
+  }
 }
 
 .mv__title {
@@ -41,6 +127,11 @@ a:hover {
   font-weight: 500;
   color: #F9F2E5;
   letter-spacing: 0.05em;
+}
+@media screen and (max-width: 768px) {
+  .mv__title {
+    font-size: 36px;
+  }
 }
 
 .message {
@@ -54,6 +145,11 @@ a:hover {
   font-weight: 500;
   color: #F9F2E5;
 }
+@media screen and (max-width: 768px) {
+  .message__title {
+    font-size: 19px;
+  }
+}
 
 .message__text {
   text-align: center;
@@ -63,16 +159,35 @@ a:hover {
   margin-top: 30px;
   color: #F9F2E5;
 }
+@media screen and (max-width: 768px) {
+  .message__text {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: left;
+  }
+}
 
 .message__contents {
   display: flex;
   justify-content: center;
   column-gap: 30px;
-  padding-top: 80px;
+  margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .message__contents {
+    display: block;
+    margin: 50px auto 0;
+    width: 250px;
+  }
 }
 
 .message__img {
   width: 290px;
+}
+@media screen and (max-width: 768px) {
+  .message__img {
+    width: 250px;
+  }
 }
 
 .message__img img {
@@ -82,6 +197,11 @@ a:hover {
 
 .message__body {
   width: 324px;
+}
+@media screen and (max-width: 768px) {
+  .message__body {
+    width: 100%;
+  }
 }
 
 .body__title {
@@ -97,6 +217,11 @@ a:hover {
   height: 14px;
   background: url("../../img/section-title-logo.svg") no-repeat center/contain;
 }
+@media screen and (max-width: 768px) {
+  .body__title {
+    margin-top: 20px;
+  }
+}
 
 .body__text, .body__name {
   margin-top: 30px;
@@ -105,6 +230,11 @@ a:hover {
   font-weight: 300;
   letter-spacing: 0.05em;
   line-height: 2;
+}
+@media screen and (max-width: 768px) {
+  .body__text, .body__name {
+    margin-top: 10px;
+  }
 }
 
 .profile {

@@ -1,16 +1,23 @@
 @use "../base/base";
 @use "../global" as *;
+@use "../common/contact-section";
 
 .mv{
   background-image: url(../../img/about-mv.jpg);
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
+  @include mq("md"){
+    background-image: url(../../img/about-mv-sp.jpg);
+  }
 }
 
 .mv__inner{
   padding: 290px 0 190px 0;
   text-align: center;
+  @include mq("md"){
+    padding: 240px 0 160px 0;
+  }
 }
 
 .mv__title{
@@ -20,17 +27,24 @@
   font-weight: $medium;
   color: $skin;
   letter-spacing: 0.05em;
+  @include mq("md"){
+    font-size: 36px;
+  } 
 }
 
 .message{
   background-color: $gray;
 }
+
 .message__title{
   text-align: center;
   font-size: 24px;
   letter-spacing: 0.05em;
   font-weight: $medium;
   color: $skin;
+  @include mq("md"){
+    font-size: 19px;
+  }
 }
 
 .message__text{
@@ -40,17 +54,30 @@
   font-weight: $regular;
   margin-top: 30px;
   color: $skin;
+  @include mq("md"){
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: left;
+  }
 }
 
 .message__contents{
   display: flex;
   justify-content: center;
   column-gap: 30px;
-  padding-top: 80px;
+  margin-top: 80px;
+  @include mq("md"){
+    display: block;
+    margin: 50px auto 0;
+    width: 250px;
+  }
 }
 
 .message__img{
   width: 290px;
+  @include mq("md"){
+    width: 250px;
+  }
 }
 
 .message__img img{
@@ -60,6 +87,9 @@
 
 .message__body{
   width: 324px;
+  @include mq("md"){
+    width: 100%;
+  }
 }
 
 .body__title{
@@ -74,6 +104,9 @@
     height: 14px;
     background: url("../../img/section-title-logo.svg") no-repeat center / contain;
   }
+  @include mq("md"){
+     margin-top: 20px;
+  }
 }
 
 .body__text, .body__name{
@@ -83,6 +116,9 @@
   font-weight: $regular;
   letter-spacing: 0.05em;
   line-height: 2;
+  @include mq("md"){
+    margin-top: 10px;
+  }
 }
 
 .profile{

@@ -1,5 +1,6 @@
 @use "../base/base";
 @use "../global" as *;
+@use "../common/contact-section";
 
 .mv{
   width: 100%;
@@ -206,6 +207,7 @@
 .about__btn{
   width: 200px;
   margin: 100px auto 0;
+  cursor: pointer;
   @include mq("md"){
     margin: 126px auto 0;
     width: 173px;

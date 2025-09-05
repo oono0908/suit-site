@@ -2,23 +2,20 @@ $(function () {
   $(".js-hamberger,.js-drawer,.js-drawer__link a").click(function() {
      $(".js-hamberger").toggleClass("is-active")
      $(".js-drawer").fadeToggle()
-    //  return false;
     })
 });
 
-$(function(){
-  $('.info__map').on('click', function(){
-    $('.modal').addClass('is-open');
-    $('body').addClass('is-fixed');
-    return false;
-  });
-
-  $('.map__close-btn, .modal').on('click', function(e){
-     if (!$(e.target).closest('.map__body').length || $(e.target).is('.map__close-btn, .map__close-btn span')) {
-      $('.modal').removeClass('is-open');
-      $('body').removeClass('is-fixed');
+$(function() {
+  $(window).on('scroll', function() {
+    var aboutTop = $('.js-about').offset().top;
+    var scroll = $(window).scrollTop();
+    if (scroll >= aboutTop) {
+      $('.js-header').css('background-color', "#222222");
+      $('.js-top-btn').css('display','block');
+    } else {
+      $('.js-header').css('background-color', 'transparent');
+       $('.js-top-btn').css('display','none');
     }
-    return false;
   });
 });
 

@@ -4,6 +4,9 @@ section.contact
       h2.section-title.section-title-line--short Contact
       .contact__btn-contents
         p お気軽にご相談ください
-        a.contact__btn.btn.btn--arrow(src="./contact/index.html") お問い合わせはこちら
+        if page === "top"
+          a.contact__btn.btn.btn--arrow(href="./contact/index.html") お問い合わせはこちら
+        else
+          a.contact__btn.btn.btn--arrow(href="../contact/index.html") お問い合わせはこちら
     .contact__img
       img(src="../img/contact-img.jpg" alt="suitを採寸するための鋏とメジャー")
