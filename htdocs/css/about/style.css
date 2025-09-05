@@ -118,6 +118,12 @@ a:hover {
 .profile__items {
   margin-top: 73px;
 }
+@media screen and (max-width: 768px) {
+  .profile__items {
+    padding: 0 30px;
+    margin-top: 44px;
+  }
+}
 
 .profile__item {
   display: flex;
@@ -125,11 +131,22 @@ a:hover {
   border-bottom: 1px solid #F9F2E5;
   padding: 15px 0;
 }
+@media screen and (max-width: 768px) {
+  .profile__item {
+    display: block;
+  }
+}
 
 .item__title, .item__text {
   font-size: 14px;
   color: #F9F2E5;
   letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 768px) {
+  .item__text {
+    margin-top: 18px;
+  }
 }
 
 .item__title {
@@ -140,6 +157,10 @@ a:hover {
   margin-top: 10px;
   color: #F9F2E5;
   font-family: "Noto Sans Jp", sans-serif;
+  border-bottom: 1px solid #F9F2E5;
+}
+.info__map:hover {
+  opacity: 0.6;
 }
 
 .modal {
@@ -169,21 +190,45 @@ a:hover {
   background-color: white;
   padding: 0 24px 24px 24px;
 }
+@media screen and (max-width: 768px) {
+  .map__body {
+    padding: 0 14px 14px 14px;
+  }
+}
 
 .map__upper-area {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 28px;
+}
+@media screen and (max-width: 768px) {
+  .map__upper-area {
+    margin-top: 18px;
+  }
 }
 
 .map__title {
   font-size: 15px;
   color: #141414;
 }
+@media screen and (max-width: 768px) {
+  .map__title {
+    font-size: 14px;
+  }
+}
+
+.map__lower-area {
+  margin-top: 24px;
+}
+@media screen and (max-width: 768px) {
+  .map__lower-area {
+    margin-top: 18px;
+  }
+}
 
 .map__img {
   width: 412px;
-  margin-top: 24px;
 }
 
 .map__img img {

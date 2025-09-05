@@ -66,6 +66,8 @@ block main
                   span
               .map__lower-area
                 .map__img
-                  img(src="../img/map-img.jpg" alt="千代田区淡路町の本社が示されているgooglemap")
+                  picture
+			              source(srcset="../img/map-img.jpg", media='(min-width: 768px)', type='image/jpg')
+			              img(src="../img/map-img-sp.jpg", alt="千代田区淡路町の本社が示されているgooglemap")
 
         include ../common/_contact.pug
