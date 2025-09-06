@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-size: 16px;
 }
@@ -211,17 +210,20 @@ a:hover, button:hover {
   padding: 18px 0;
   width: 100%;
   cursor: pointer;
-}
-.contact__btn input:hover {
-  opacity: 0.8;
+  opacity: 1;
+  border: 1px solid #F9F2E5;
+  text-align: center;
+  color: #F9F2E5;
+  transition: opacity 0.3s;
+  opacity: 1;
 }
 
 .contact__btn input[type=submit]:disabled {
-  opacity: 0.5; /* 好みで */
-  cursor: default; /* pointerにしない */
-  pointer-events: none; /* 念のため */
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
 }
 
 .contact__btn input[type=submit]:disabled:hover {
-  opacity: 0.5; /* hoverで変化させない */
+  opacity: 0.5;
 }

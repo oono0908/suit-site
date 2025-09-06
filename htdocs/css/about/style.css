@@ -361,11 +361,18 @@ a:hover, button:hover {
 
 .map__img {
   width: 412px;
+  height: 412px;
+}
+@media screen and (max-width: 768px) {
+  .map__img {
+    width: 240px;
+    height: 240px;
+  }
 }
 
-.map__img img {
+.map__img picture, source, img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .map__close-btn {

@@ -47,5 +47,8 @@ header.header.js-header
             li.drawer__item.js-drawer__item
               a.drawer__link(href="../index.html#news") News
         .drawer__contact-btn.btn
-          a.drawer__contact-link(href="#contact") Contact
+          if page === "contact"
+            a.drawer__contact-link(href="#contact") Contact
+          else
+            a.drawer__contact-link(href="../contact/index.html#contact") Contact
 

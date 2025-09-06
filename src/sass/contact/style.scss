@@ -180,16 +180,20 @@
   padding: 18px 0;
   width: 100%;
   cursor: pointer;
-  &:hover{
-    opacity: 0.8;
-  }
+  opacity: 1;
+  border: 1px solid $skin;
+  text-align: center;
+  color: $skin;
+  transition: opacity 0.3s;
+  opacity: 1;
 }
 
 .contact__btn input[type="submit"]:disabled {
-  opacity: .5;               /* 好みで */
-  cursor: default;           /* pointerにしない */
-  pointer-events: none;      /* 念のため */
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
 }
 .contact__btn input[type="submit"]:disabled:hover {
-  opacity: .5;               /* hoverで変化させない */
+  opacity: 0.5;
 }
+

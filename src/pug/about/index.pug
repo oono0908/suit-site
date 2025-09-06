@@ -31,7 +31,9 @@ block main
             | すべてを合わせると数万通り以上の中から、あなたにあった一着をお届けします。
           .message__contents
             .message__img
-              img(src="../img/message-img.png" alt="黒の服を着たスタイリッシュな女性がソファーに座っている様子" width="290" height="340")
+              picture
+                source(srcset="../img/message-img-sp.png", media='(max-width: 768px)')
+                img(src="../img/message-img.png", alt="黒の服を着たスタイリッシュな女性がソファーに座っている様子" width="290" height="340" loading="lazy" decoding="async")
             .message__body.body
               h3.body__title.section-title.section-title--line-none Message
               .body__text 祖父から受け継いだ技術や伝統を守りながらも、時代にあったスーツを常に追求しています。お客様から「着心地が全く違う」「このスーツで毎日がんばれます」などの嬉しいお言葉がわたしたちを支えてくれました。オーダーメイドスーツは敷居が高いと思われがちですが、わたしたちは常にお客様の身近な存在であり続けたいと思っています。あなたのためだけに存在する最高の一着を。
