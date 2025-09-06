@@ -3,7 +3,7 @@
 @use "header";
 @use "footer";
 
-
+// 各ページにあるh3のtitle
 .section-title{
   font-family: "Cormorant", sans-serif;
   font-size: 38px;
@@ -74,6 +74,7 @@
   }
 }
 
+// btn共通
 .btn{
   border: 1px solid $skin;
   text-align: center;
@@ -109,6 +110,7 @@
   }
 }
 
+// 共通パーツ
 .inner{
   max-width: 1150px;
   margin: 0 auto;
@@ -118,6 +120,22 @@
   }
 }
 
+// top-btn
+.top-btn{
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 150;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: $skin;
+  @include mq("md"){
+    bottom: 50px;
+    right: 30px;
+  }
+}
+
+// sp、pc表示の有無
 .md-none{
   @include mq("md"){
     display: none !important;
@@ -130,4 +148,5 @@
     display: block !important;
   }
 }
+
 

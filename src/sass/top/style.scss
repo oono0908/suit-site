@@ -2,6 +2,7 @@
 @use "../global" as *;
 @use "../common/contact-section";
 
+// mv
 .mv{
   width: 100%;
   height: 100vh;
@@ -28,7 +29,7 @@
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
-  z-index: 1000;
+  z-index: 10;
   @include mq("md"){
     left: 50%;
     transform: translate(-50%,-50%);
@@ -59,11 +60,12 @@
   }
 }
 
+// swiper
 .swiper__btn, .swiper__next{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1000;
+  z-index: 10;
   width: 34px;
   height: 34px;
   background-color: #707070;
@@ -85,6 +87,7 @@
   }
 }
 
+// swiperの矢印
 .swiper .swiper-button-next{
   &::after{
     transform: rotate(-45deg) translateX(-50%);;
@@ -153,14 +156,17 @@
 
 .about__content-img{
   width: 360px;
+  height: 500px;
   @include mq("md"){
    width: 240px;
+   height: 333px;
    margin: 50px auto 0;
   }
 }
 
 .about__content-img img{
-  height: auto;
+  height: 100%;
+  width: 100%;
 }
 
 .about__content-text{
@@ -280,6 +286,7 @@
   max-width: 1030px;
   margin: 60px auto 0;
   display: none;
+  overflow: scroll;
   @include mq("md"){
     grid-template-columns: repeat(1, 1fr);
     row-gap: 30px;
@@ -293,7 +300,19 @@
 
 .card__img-content{
   position: relative;
+  width: 330px;
+  height: 370px;
+  @include mq("md"){
+    width: 250px;
+    height: 280px;
+  }
 }
+
+.card__img-content img{
+  width: 100%;
+  height: 100%;
+}
+
 .card__type{
   color: $skin;
   width: 80px;
@@ -398,6 +417,7 @@
   font-family: "Noto Sans Jp",sans-serif;
   margin-left: 30px;
 }
+
 
 
 

@@ -1,11 +1,11 @@
-section.about.js-about
+section.about.js-scroll-top
   .about__inner.inner
-    .section-title About
+    h3.section-title About
     .about__contents
       .about__content-img
         picture
-          source(srcset, media='(min-width: 768px)', type='../img/about-img.png')
-          img(src="../img/about-img-sp.png", alt="スーツの着付けをしている様子")
+          source(srcset="../img/about-img-sp.png", media='(max-width: 768px)')
+          img(src="../img/about-img.png", alt="スーツの着付けをしている様子" width="360" height="500" loading="lazy" decoding="async")
       p.about__content-text 上質を追求する
         br.md-show
         | 老舗として

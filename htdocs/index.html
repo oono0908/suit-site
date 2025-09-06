@@ -24,13 +24,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Noto+Sans+JP:wght@500&amp;family=Noto+Serif+JP:wght@200..900&amp;family=Roboto:wght@500&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common/reset.css">
     <link rel="stylesheet" href="../css/common/style.css">
     <link rel="stylesheet" href="../css/top/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/common/script.js" defer></script>
     <script src="./js/top/script.js" defer></script>
   </head>
   <body>
@@ -87,13 +86,13 @@
           <p class="mv__title-sub">上質を仕立てる</p>
         </div>
       </div>
-      <section class="about js-about">
+      <section class="about js-scroll-top">
         <div class="about__inner inner">
-          <div class="section-title">About</div>
+          <h3 class="section-title">About</h3>
           <div class="about__contents">
             <div class="about__content-img">
               <picture>
-                <source srcset media="(min-width: 768px)" type="../img/about-img.png"><img src="../img/about-img-sp.png" alt="スーツの着付けをしている様子">
+                <source srcset="../img/about-img-sp.png" media="(max-width: 768px)"><img src="../img/about-img.png" alt="スーツの着付けをしている様子" width="360" height="500" loading="lazy" decoding="async">
               </picture>
             </div>
             <p class="about__content-text">上質を追求する<br class="md-show">老舗として<br>その歴史と<br class="md-show">誇りを持って<br><span class="about__content-text--small">お客様と</span><br class="md-show"><span class="about__content-text--small">向き合っています</span></p>
@@ -104,14 +103,17 @@
       </section>
       <section class="service">
         <div class="service__inner inner">
-          <h2 class="section-title">Service</h2>
+          <h3 class="section-title">Service</h3>
           <div class="service__title">
             <button class="service__title-btn js-service-title-tab is-active" data-target="left">オーダーメイドスーツ</button>
             <button class="service__title-btn js-service-title-tab" data-target="right">その他のアイテム</button>
           </div>
-          <ul class="service__cards is-active" data-list="left">
+          <ul class="service__cards is-active js-service__cards" data-list="left">
             <li class="service__card card">
-              <div class="card__img-content"><img src="../img/service-img01.jpg" alt="カジュアルスーツ">
+              <div class="card__img-content">
+                <picture>
+                  <source srcset="../img/service-img01-sp.jpg" media="(min-width: 768px)"><img src="../img/service-img01.jpg" alt="カジュアルスーツ" width="330" height="370" loading="lazy" decoding="async">
+                </picture>
                 <div class="card__type">suit</div>
               </div>
               <div class="service__body">
@@ -120,7 +122,10 @@
               </div>
             </li>
             <li class="service__card card">
-              <div class="card__img-content"><img src="../img/service-img02.jpg" alt="リクルートスーツ">
+              <div class="card__img-content">
+                <picture>
+                  <source srcset="../img/service-img02-sp.jpg" media="(max-width: 768px)"><img src="../img/service-img02.jpg" alt="リクルートスーツ" width="330" height="370" loading="lazy" decoding="async">
+                </picture>
                 <div class="card__type">suit</div>
               </div>
               <div class="service__body">
@@ -129,7 +134,10 @@
               </div>
             </li>
             <li class="service__card card">
-              <div class="card__img-content"><img src="../img/service-img03.jpg" alt="フォーマルスーツ">
+              <div class="card__img-content">
+                <picture>
+                  <source srcset="../img/service-img03-sp.jpg" media="(max-width: 768px)"><img src="../img/service-img03.jpg" alt="フォーマルスーツ" width="330" height="370" loading="lazy" decoding="async">
+                </picture>
                 <div class="card__type">suit</div>
               </div>
               <div class="service__body">
@@ -140,7 +148,10 @@
           </ul>
           <ul class="service__cards js-service__cards" data-list="right">
             <li class="service__card card">
-              <div class="card__img-content"><img src="../img/service-img04.jpg" alt="シューズ">
+              <div class="card__img-content">
+                <picture>
+                  <source srcset="../img/service-img04-sp.jpg" media="(max-width: 768px)"><img src="../img/service-img04.jpg" alt="シューズ" width="330" height="370" loading="lazy" decoding="async">
+                </picture>
                 <div class="card__type">other</div>
               </div>
               <div class="service__body">
@@ -149,7 +160,10 @@
               </div>
             </li>
             <li class="service__card card">
-              <div class="card__img-content"><img src="../img/service-img05.jpg" alt="ネクタイ">
+              <div class="card__img-content">
+                <picture>
+                  <source srcset="../img/service-img05-sp.jpg" media="(max-width: 768px)"><img src="../img/service-img05.jpg" alt="ネクタイ" width="330" height="370" loading="lazy" decoding="async">
+                </picture>
                 <div class="card__type">other</div>
               </div>
               <div class="service__body">
@@ -158,7 +172,10 @@
               </div>
             </li>
             <li class="service__card card">
-              <div class="card__img-content"><img src="../img/service-img06.jpg" alt="フォーマルバッグ">
+              <div class="card__img-content">
+                <picture>
+                  <source srcset="../img/service-img06-sp.jpg" media="(max-width: 768px)"><img src="../img/service-img06.jpg" alt="フォーマルバッグ" width="330" height="370" loading="lazy" decoding="async">
+                </picture>
                 <div class="card__type">other</div>
               </div>
               <div class="service__body">
@@ -171,7 +188,7 @@
       </section>
       <section class="news">
         <div class="news__inner inner">
-          <h2 class="section-title section-title--black">News</h2>
+          <h3 class="section-title section-title--black">News</h3>
           <div class="news__contents">
             <ul class="news__items">
               <li class="news__item item">
@@ -216,14 +233,15 @@
       <section class="contact">
         <div class="contact__inner">
           <div class="contact__main">
-            <h2 class="section-title section-title-line--short">Contact</h2>
+            <h3 class="section-title section-title-line--short">Contact</h3>
             <div class="contact__btn-contents">
               <p>お気軽にご相談ください</p><a class="contact__btn btn btn--arrow" href="./contact/index.html">お問い合わせはこちら</a>
             </div>
           </div>
-          <div class="contact__img"><img src="../img/contact-img.jpg" alt="suitを採寸するための鋏とメジャー"></div>
+          <div class="contact__img"><img src="../img/contact-img.jpg" alt="suitを採寸するための鋏とメジャー" width="670" height="400"></div>
         </div>
       </section>
+      <div class="top-btn js-top-btn"><img class="top-btn__img" src="../../img/Top-btn.svg" alt="トップに戻るボタン"></div>
     </main>
     <div class="footer">
       <div class="footer__inner">

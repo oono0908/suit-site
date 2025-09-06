@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Noto+Sans+JP:wght@500&amp;family=Noto+Serif+JP:wght@200..900&amp;family=Roboto:wght@500&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common/reset.css">
     <link rel="stylesheet" href="../css/common/style.css">
     <link rel="stylesheet" href="../css/about/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -60,14 +60,14 @@
           <h2 class="mv__title">About</h2>
         </div>
       </div>
-      <section class="message">
+      <section class="message js-scroll-top">
         <div class="message__inner inner">
-          <p class="message__title">上質を追求する老舗として<br>その歴史を誇りを持ってスーツ作りに向き合ってます</p>
+          <p class="message__title">上質を追求する老舗として<br>その歴史を誇りを持って<br class="md-show">スーツ作りに向き合ってます</p>
           <div class="message__text">熟練の職人が全ての技術と経験、そして職人の魂を詰め込んだ最高の一着。<br>お客様と対話しながら、シルエットやデザインをひとつずつ決め、スーツを作り上げていく。<br>生地、スタイルにはじまり、ボタン、裏地、襟型、袖口、ポケット、ベント、パンツなどなど。<br>すべてを合わせると数万通り以上の中から、あなたにあった一着をお届けします。</div>
           <div class="message__contents">
-            <div class="message__img"><img src="../img/message-img.png" alt="黒の服を着たスタイリッシュな女性がソファーに座っている様子"></div>
+            <div class="message__img"><img src="../img/message-img.png" alt="黒の服を着たスタイリッシュな女性がソファーに座っている様子" width="290" height="340"></div>
             <div class="message__body body">
-              <div class="body__title section-title section-title--line-none">Message</div>
+              <h3 class="body__title section-title section-title--line-none">Message</h3>
               <div class="body__text">祖父から受け継いだ技術や伝統を守りながらも、時代にあったスーツを常に追求しています。お客様から「着心地が全く違う」「このスーツで毎日がんばれます」などの嬉しいお言葉がわたしたちを支えてくれました。オーダーメイドスーツは敷居が高いと思われがちですが、わたしたちは常にお客様の身近な存在であり続けたいと思っています。あなたのためだけに存在する最高の一着を。</div>
               <div class="body__name">代表取締役 ルカ・コバッチ・高橋</div>
             </div>
@@ -76,7 +76,7 @@
       </section>
       <section class="profile">
         <div class="profile__inner inner">
-          <h2 class="section-title section-title--line-none">Company Profile</h2>
+          <h3 class="section-title section-title--line-none">Company Profile</h3>
           <ul class="profile__items">
             <li class="profile__item item">
               <div class="item__title">会社名</div>
@@ -86,7 +86,7 @@
               <div class="item__title">所在地</div>
               <div class="info">
                 <div class="item__text">〒100-0000 東京都中央区銀座4丁目〇〇-〇〇</div>
-                <button class="info__map">Google map</button>
+                <button class="info__map js-info__map">Google map</button>
               </div>
             </li>
             <li class="profile__item item">
@@ -104,35 +104,36 @@
           </ul>
         </div>
       </section>
-      <div class="modal">
+      <div class="modal js-modal">
         <div class="modal__inner map">
-          <div class="map__body">
+          <div class="map__body js-map__body">
             <div class="map__upper-area">
               <div class="map__title">株式会社ExciteCode</div>
-              <div class="map__close-btn"><span></span><span></span></div>
+              <div class="map__close-btn js-map__close-btn"><span></span><span></span></div>
             </div>
             <div class="map__lower-area">
               <div class="map__img">
                 <picture>
-                  <source srcset="../img/map-img.jpg" media="(min-width: 768px)" type="image/jpg"><img src="../img/map-img-sp.jpg" alt="千代田区淡路町の本社が示されているgooglemap">
+                  <source srcset="../img/map-img-sp.jpg" media="(max-width: 768px)"><img src="../img/map-img.jpg" alt="千代田区淡路町の本社が示されているgooglemap" loading="lazy" decoding="async">
                 </picture>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <section class="contact">
-      <div class="contact__inner">
-        <div class="contact__main">
-          <h2 class="section-title section-title-line--short">Contact</h2>
-          <div class="contact__btn-contents">
-            <p>お気軽にご相談ください</p><a class="contact__btn btn btn--arrow" href="../contact/index.html">お問い合わせはこちら</a>
+      <div class="top-btn js-top-btn"><img class="top-btn__img" src="../../img/Top-btn.svg" alt="トップに戻るボタン"></div>
+      <section class="contact">
+        <div class="contact__inner">
+          <div class="contact__main">
+            <h3 class="section-title section-title-line--short">Contact</h3>
+            <div class="contact__btn-contents">
+              <p>お気軽にご相談ください</p><a class="contact__btn btn btn--arrow" href="../contact/index.html">お問い合わせはこちら</a>
+            </div>
           </div>
+          <div class="contact__img"><img src="../img/contact-img.jpg" alt="suitを採寸するための鋏とメジャー" width="670" height="400"></div>
         </div>
-        <div class="contact__img"><img src="../img/contact-img.jpg" alt="suitを採寸するための鋏とメジャー"></div>
-      </div>
-    </section>
+      </section>
+    </main>
     <div class="footer">
       <div class="footer__inner">
         <p class="footer__text">&copy;ExciteCode&nbsp;all&nbsp;rights&nbsp;reserved</p>

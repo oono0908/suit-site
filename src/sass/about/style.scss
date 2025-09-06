@@ -2,6 +2,7 @@
 @use "../global" as *;
 @use "../common/contact-section";
 
+// mv
 .mv{
   background-image: url(../../img/about-mv.jpg);
   background-size:cover;
@@ -32,6 +33,7 @@
   } 
 }
 
+// message
 .message{
   background-color: $gray;
 }
@@ -43,7 +45,8 @@
   font-weight: $medium;
   color: $skin;
   @include mq("md"){
-    font-size: 19px;
+    font-size: 15px;
+    line-height: 2;
   }
 }
 
@@ -56,8 +59,10 @@
   color: $skin;
   @include mq("md"){
     font-size: 14px;
-    margin-top: 20px;
+    margin: 20px auto 0;
     text-align: left;
+    width: 285px;
+    line-height: 2;
   }
 }
 
@@ -75,14 +80,16 @@
 
 .message__img{
   width: 290px;
+  height: 340px;
   @include mq("md"){
     width: 250px;
+    height: 293px;
   }
 }
 
 .message__img img{
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .message__body{
@@ -121,6 +128,7 @@
   }
 }
 
+// profile
 .profile{
   background-color: $gray2;
 }
@@ -171,6 +179,7 @@
   }
 }
 
+// modal
 .modal{
   position: fixed;
   top:0;
@@ -182,7 +191,7 @@
   display: none;
 }
 
-.modal.is-open{
+.js-modal.is-open{
   display: block;
 }
 
@@ -259,6 +268,8 @@
 .map__close-btn span:nth-child(2){
   transform: translate(-50%,-50%) rotate(-45deg);
 }
+
+
 
 
 

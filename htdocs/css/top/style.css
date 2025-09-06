@@ -81,8 +81,8 @@ a:hover, button:hover {
 }
 
 .contact__img {
+  width: 670px;
   height: 400px;
-  width: 45%;
 }
 @media screen and (max-width: 1024px) {
   .contact__img {
@@ -91,9 +91,6 @@ a:hover, button:hover {
 }
 
 .contact__img img {
-  height: auto;
-  display: block;
-  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -125,7 +122,7 @@ a:hover, button:hover {
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
-  z-index: 1000;
+  z-index: 10;
 }
 @media screen and (max-width: 768px) {
   .mv__title {
@@ -166,7 +163,7 @@ a:hover, button:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1000;
+  z-index: 10;
   width: 34px;
   height: 34px;
   background-color: #707070;
@@ -250,16 +247,19 @@ a:hover, button:hover {
 
 .about__content-img {
   width: 360px;
+  height: 500px;
 }
 @media screen and (max-width: 768px) {
   .about__content-img {
     width: 240px;
+    height: 333px;
     margin: 50px auto 0;
   }
 }
 
 .about__content-img img {
-  height: auto;
+  height: 100%;
+  width: 100%;
 }
 
 .about__content-text {
@@ -385,6 +385,7 @@ a:hover, button:hover {
   max-width: 1030px;
   margin: 60px auto 0;
   display: none;
+  overflow: scroll;
 }
 @media screen and (max-width: 768px) {
   .service__cards {
@@ -400,6 +401,19 @@ a:hover, button:hover {
 
 .card__img-content {
   position: relative;
+  width: 330px;
+  height: 370px;
+}
+@media screen and (max-width: 768px) {
+  .card__img-content {
+    width: 250px;
+    height: 280px;
+  }
+}
+
+.card__img-content img {
+  width: 100%;
+  height: 100%;
 }
 
 .card__type {

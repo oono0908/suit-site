@@ -1,27 +1,33 @@
 section.service
   .service__inner.inner
-    h2.section-title Service
+    h3.section-title Service
     .service__title
       button.service__title-btn.js-service-title-tab.is-active(data-target='left') オーダーメイドスーツ
       button.service__title-btn.js-service-title-tab(data-target='right') その他のアイテム
-    ul.service__cards.is-active(data-list="left")
+    ul.service__cards.is-active.js-service__cards(data-list="left")
       li.service__card.card
         .card__img-content
-          img(src="../img/service-img01.jpg" alt="カジュアルスーツ")
+          picture
+            source(srcset="../img/service-img01-sp.jpg", media='(min-width: 768px)')
+            img(src="../img/service-img01.jpg" alt="カジュアルスーツ" width="330" height="370" loading="lazy" decoding="async")
           .card__type suit
         .service__body
           p.service__text-large カジュアルスーツ
           p.service__text-small あなただけでのスタイルで着こなす、あなただけの一着を
       li.service__card.card
         .card__img-content
-          img(src="../img/service-img02.jpg" alt="リクルートスーツ")
+          picture
+            source(srcset="../img/service-img02-sp.jpg", media='(max-width: 768px)')
+            img(src="../img/service-img02.jpg" alt="リクルートスーツ" width="330" height="370" loading="lazy" decoding="async")
           .card__type suit
         .service__body
           p.service__text-large リクルートスーツ
           p.service__text-small あなただけでのスタイルで着こなす、あなただけの一着を
       li.service__card.card
         .card__img-content
-          img(src="../img/service-img03.jpg" alt="フォーマルスーツ")
+          picture
+            source(srcset="../img/service-img03-sp.jpg", media='(max-width: 768px)')
+            img(src="../img/service-img03.jpg" alt="フォーマルスーツ" width="330" height="370" loading="lazy" decoding="async")
           .card__type suit
         .service__body
           p.service__text-large フォーマルスーツ
@@ -29,21 +35,27 @@ section.service
     ul.service__cards.js-service__cards(data-list="right")
       li.service__card.card
         .card__img-content
-          img(src="../img/service-img04.jpg" alt="シューズ")
+          picture
+            source(srcset="../img/service-img04-sp.jpg", media='(max-width: 768px)')
+            img(src="../img/service-img04.jpg" alt="シューズ" width="330" height="370" loading="lazy" decoding="async")
           .card__type other
         .service__body
           p.service__text-large シューズ
           p.service__text-small あなただけでのスタイルで着こなす、あなただけの一着を
       li.service__card.card
         .card__img-content
-          img(src="../img/service-img05.jpg" alt="ネクタイ")
+          picture
+            source(srcset="../img/service-img05-sp.jpg", media='(max-width: 768px)')
+            img(src="../img/service-img05.jpg" alt="ネクタイ" width="330" height="370" loading="lazy" decoding="async")
           .card__type other
         .service__body
           p.service__text-large ネクタイ
           p.service__text-small あなただけでのスタイルで着こなす、あなただけの一着を
       li.service__card.card
         .card__img-content
-          img(src="../img/service-img06.jpg" alt="フォーマルバッグ")
+          picture
+            source(srcset="../img/service-img06-sp.jpg", media='(max-width: 768px)')
+            img(src="../img/service-img06.jpg" alt="フォーマルバッグ" width="330" height="370" loading="lazy" decoding="async")
           .card__type other
         .service__body
           p.service__text-large フォーマルバッグ

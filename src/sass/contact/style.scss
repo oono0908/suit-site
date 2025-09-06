@@ -51,6 +51,7 @@
 
 .form__list{
   width: 100%;
+  position: relative;
 }
 
 .form__list dl{
@@ -74,6 +75,15 @@
   }
 }
 
+.form__error{
+  position: absolute;
+  color: $skin;
+  font-size: 11px;
+  bottom: -20px;
+  z-index: 10;
+  color: red;
+}
+
 .form__input-text{
   width: 360px;
   padding: 14px 12px;
@@ -88,7 +98,11 @@
 }
 
 .form__list:not(:first-child), .form__radio{
-  margin-top: 22px;
+  margin-top: 50px;
+}
+
+.form__radio{
+  position: relative;
 }
 
 .radio__input .radio__label{
@@ -155,7 +169,7 @@
 
 .contact__btn{
   width: 180px;
-  margin: 30px auto 0;
+  margin: 70px auto 0;
   background-color: transparent;
   text-align: center;
 }
@@ -169,4 +183,13 @@
   &:hover{
     opacity: 0.8;
   }
+}
+
+.contact__btn input[type="submit"]:disabled {
+  opacity: .5;               /* 好みで */
+  cursor: default;           /* pointerにしない */
+  pointer-events: none;      /* 念のため */
+}
+.contact__btn input[type="submit"]:disabled:hover {
+  opacity: .5;               /* hoverで変化させない */
 }

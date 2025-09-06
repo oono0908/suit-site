@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 16px;
 }
@@ -75,6 +76,7 @@ a:hover, button:hover {
 
 .form__list {
   width: 100%;
+  position: relative;
 }
 
 .form__list dl {
@@ -100,6 +102,15 @@ a:hover, button:hover {
   }
 }
 
+.form__error {
+  position: absolute;
+  color: #F9F2E5;
+  font-size: 11px;
+  bottom: -20px;
+  z-index: 10;
+  color: red;
+}
+
 .form__input-text {
   width: 360px;
   padding: 14px 12px;
@@ -116,7 +127,11 @@ a:hover, button:hover {
 }
 
 .form__list:not(:first-child), .form__radio {
-  margin-top: 22px;
+  margin-top: 50px;
+}
+
+.form__radio {
+  position: relative;
 }
 
 .radio__input .radio__label {
@@ -185,7 +200,7 @@ a:hover, button:hover {
 
 .contact__btn {
   width: 180px;
-  margin: 30px auto 0;
+  margin: 70px auto 0;
   background-color: transparent;
   text-align: center;
 }
@@ -199,4 +214,14 @@ a:hover, button:hover {
 }
 .contact__btn input:hover {
   opacity: 0.8;
+}
+
+.contact__btn input[type=submit]:disabled {
+  opacity: 0.5; /* 好みで */
+  cursor: default; /* pointerにしない */
+  pointer-events: none; /* 念のため */
+}
+
+.contact__btn input[type=submit]:disabled:hover {
+  opacity: 0.5; /* hoverで変化させない */
 }

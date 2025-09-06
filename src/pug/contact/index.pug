@@ -5,7 +5,7 @@ block append css
 block append js 
   script(src='https://code.jquery.com/jquery-3.3.1.js')
   script(src="../js/common/script.js" defer)
-  script(src="../js/about/script.js" defer)
+  script(src="../js/contact/script.js" defer)
 
 block var
   - var page = 'contact'
@@ -15,7 +15,7 @@ block main
       .mv
         .mv__inner
           h2.mv__title Contact
-      section.contact
+      .contact.js-scroll-top
         .contact__inner.inner
           p.contact__text 当店へのお問い合わせは下記フォームより受け付けております。
             br
@@ -58,3 +58,4 @@ block main
                       textarea.form__textarea-text(type="text" placeholder="入力してください" name="お問い合わせ内容")
                 .contact__btn.btn
                   input(type="submit" value="送信")
+      include ../parts/_topBtn.pug

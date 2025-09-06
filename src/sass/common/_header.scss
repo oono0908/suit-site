@@ -11,7 +11,7 @@ body.is-fixed{
 .header{
   height: 95px;
   position: fixed;
-  z-index: 500;
+  z-index: 50;
   width: 100%;
   top: 0;
   left: 0;
@@ -78,7 +78,7 @@ body.is-fixed{
   height: 16px;
   position: relative;
   margin-right: 15px;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .hamberger span{
@@ -129,6 +129,7 @@ body.is-fixed{
   top: 0;
   left: 0;
   display: none;
+  z-index: 150;
 }
 
 .drawer__inner{
