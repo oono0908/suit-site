@@ -24,7 +24,12 @@ header.header.js-header
         li.header__item
           a.header__link.js-header__link(href="../index.html#news") News
     .header__contact-btn.btn.md-none
-       a.header__contact-link(href="../contact/index.html") Contact
+      if page === "contact"
+        a.header__contact-link(href="#contact") Contact
+      else if page === "top"
+        a.header__contact-link(href="./contact/index.html#contact") Contact
+      else
+        a.header__contact-link(href="../contact/index.html#contact") Contact
     .hamberger.md-show.js-hamberger
       span
       span
@@ -49,6 +54,8 @@ header.header.js-header
         .drawer__contact-btn.btn
           if page === "contact"
             a.drawer__contact-link(href="#contact") Contact
+          else if page === "top"
+            a.drawer__contact-link(href="./contact/index.html#contact") Contact
           else
             a.drawer__contact-link(href="../contact/index.html#contact") Contact
 

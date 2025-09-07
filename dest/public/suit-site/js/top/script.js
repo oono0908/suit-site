@@ -33,7 +33,7 @@ $(function() {
 
   let isOpen = false;
 
-  $('.js-drawer__item a, .js-header__link, .js-drawer, .js-hamberger').on('click', function(e) {
+  $('.js-drawer__item a,.js-drawer, .js-hamberger').on('click', function(e) {
 
     e.stopPropagation();
 
@@ -49,6 +49,27 @@ $(function() {
       height:  isOpen ? '100%' : '',
       overflow: isOpen ? 'hidden' : ''
     });
+
+    // 各sectionへの遷移
+    var targetId = $(this).attr('href');
+    var idName = targetId.replace("#", "");
+    var target = $("." + idName);
+    if(target.length) {
+      var headerHeight = $('.js-header').outerHeight();
+      var scrollPosition = target.offset().top - headerHeight;
+      $('html, body').animate({
+        scrollTop: scrollPosition
+      }, 600);
+    }
+    return false;
+  });
+});
+
+// .js-header__linkがクリックされたとき
+$(function() {
+  $('.js-header__link').on('click', function(e) {
+
+    e.stopPropagation();
 
     // 各sectionへの遷移
     var targetId = $(this).attr('href');
