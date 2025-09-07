@@ -6,6 +6,8 @@ import gulpSass from 'gulp-sass';
 import plumber from 'gulp-plumber';
 import changed from 'gulp-changed';
 import imagemin, {mozjpeg, optipng} from 'gulp-imagemin';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
 import uglify from 'gulp-uglify';
 import cleanCSS from 'gulp-clean-css';
 import htmlmin from 'gulp-htmlmin';
@@ -49,7 +51,18 @@ const sass_task = () => {
     },
   }))
   .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
-  // .pipe(cleanCSS())
+  .pipe(postcss([
+      autoprefixer({
+        browsers: [
+          "last 2 versions",
+          "ie >= 11",
+          "Android >= 4"
+        ],
+
+      cascade: false
+      })
+    ]))
+  .pipe(cleanCSS())
   .pipe(gulp.dest(dest.css))
   .pipe(browserSync.reload({stream:true}));
 }
@@ -68,7 +81,7 @@ const pug_task = () => {
 
 const js_task = () => {
   return gulp.src(src.js)
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest(dest.js));
 }
 
@@ -85,7 +98,7 @@ const watch_task = () => {
   gulp.watch(src.pugwatch, pug_task);
   gulp.watch(src.sass, sass_task);
   gulp.watch(src.img, img_task);
-   gulp.watch(src.js, js_task);
+  gulp.watch(src.js, js_task);
 }
  
 export default gulp.parallel(watch_task, server_task, img_task);
