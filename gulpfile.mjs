@@ -13,22 +13,22 @@ import htmlmin from 'gulp-htmlmin';
 const sass = gulpSass(dartSass);
 
 const src = {
-  root: 'src/',
-  pug: ['src/pug/**/*.pug', '!src/pug/**/_*.pug'],
-  pugbase: './src/pug',
-  pugwatch: 'src/pug/**/*.pug',
-  sass: ['./src/sass/**/*.scss'],
-  sasswatch: './src/sass/**/*.scss',
-  img:'./src/img/**/*',
-  js: './src/js/**/*.js'
+  root: './src/suit-site',
+  pug: ['./src/suit-site/pug/**/*.pug', '!src/pug/**/_*.pug'],
+  pugbase: './src/suit-site/pug',
+  pugwatch: 'src/suit-site/pug/**/*.pug',
+  sass: ['./src/suit-site/sass/**/*.scss'],
+  sasswatch: './src/suit-site/sass/**/*.scss',
+  img:'./src/suit-site/img/**/*',
+  js: './src/suit-site/js/**/*.js'
 };
  
 const dest = {
-  root: './htdocs/',
-  pug: './htdocs/',
-  css: './htdocs/css/',
-  img: './htdocs/img/',
-  js: './htdocs/js/'
+  root: './dest/suit-site/',
+  pug: './dest/suit-site/',
+  css: './dest/suit-site/css/',
+  img: './dest/suit-site/img/',
+  js: './dest/suit-site/js/'
 };
 
 const img_task = () => (
