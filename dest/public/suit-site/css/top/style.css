@@ -28,7 +28,7 @@ a:hover, button:hover {
 }
 @media screen and (max-width: 1024px) {
   .contact {
-    background-image: url(/img/common/contact-img-sp.jpg);
+    background-image: url(/suit-site//img/common/contact-img-sp.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

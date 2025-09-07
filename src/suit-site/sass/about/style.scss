@@ -4,12 +4,12 @@
 
 // mv
 .mv{
-  background-image: url(/img/about/about-mv.jpg);
+  background-image: url(/suit-site/img/about/about-mv.jpg);
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
   @include mq("md"){
-    background-image: url(/img/about/about-mv-sp.jpg);
+    background-image: url(/suit-site//img/about/about-mv-sp.jpg);
   }
 }
 
@@ -109,7 +109,7 @@
     transform: translateY(-50%);
     width: 14px;
     height: 14px;
-    background: url("../../img/section-title-logo.svg") no-repeat center / contain;
+    background: url("/suit-site/img/section-title-logo.svg") no-repeat center / contain;
   }
   @include mq("md"){
      margin-top: 20px;

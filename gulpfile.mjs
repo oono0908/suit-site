@@ -24,11 +24,11 @@ const src = {
 };
  
 const dest = {
-  root: './dest/suit-site/',
-  pug: './dest/suit-site/',
-  css: './dest/suit-site/css/',
-  img: './dest/suit-site/img/',
-  js: './dest/suit-site/js/'
+  root: './dest/public/',
+  pug: './dest/public/suit-site/',
+  css: './dest/public/suit-site/css/',
+  img: './dest/public/suit-site/img/',
+  js: './dest/public/suit-site/js/'
 };
 
 const img_task = () => (
@@ -77,7 +77,7 @@ const server_task = () => {
     server: {
       baseDir: dest.root,
     },
-    startPath: '/',
+    startPath: '/suit-site/',
   });
 }
  

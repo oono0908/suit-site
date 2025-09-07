@@ -23,14 +23,14 @@ a:hover, button:hover {
 }
 
 .mv {
-  background-image: url(/img/contact/contact-mv.jpg);
+  background-image: url(/suit-site/img/contact/contact-mv.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 @media screen and (max-width: 768px) {
   .mv {
-    background-image: url(/img/contact/contact-mv-sp.jpg);
+    background-image: url(/suit-site/img/contact/contact-mv-sp.jpg);
   }
 }
 

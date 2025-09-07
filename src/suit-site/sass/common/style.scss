@@ -23,7 +23,7 @@
   transform: translateY(-50%);
   width: 14px;
   height: 14px;
-  background: url("../../img/section-title-logo.svg") no-repeat center / contain;
+  background: url("/suit-site/img/section-title-logo.svg") no-repeat center / contain;
   }
   &::after{
     position: absolute;
@@ -66,7 +66,7 @@
 .section-title--black{
   color: $gray;
   &::before{
-    background: url("../../img/section-title-logo-black.svg") no-repeat center / contain;
+    background: url("/suit-site/img/section-title-logo-black.svg") no-repeat center / contain;
   }
   &::after{
     color: $gray;

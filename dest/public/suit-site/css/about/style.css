@@ -28,7 +28,7 @@ a:hover, button:hover {
 }
 @media screen and (max-width: 1024px) {
   .contact {
-    background-image: url(/img/common/contact-img-sp.jpg);
+    background-image: url(/suit-site//img/common/contact-img-sp.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -96,14 +96,14 @@ a:hover, button:hover {
 }
 
 .mv {
-  background-image: url(/img/about/about-mv.jpg);
+  background-image: url(/suit-site/img/about/about-mv.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 @media screen and (max-width: 768px) {
   .mv {
-    background-image: url(/img/about/about-mv-sp.jpg);
+    background-image: url(/suit-site//img/about/about-mv-sp.jpg);
   }
 }
 
@@ -217,7 +217,7 @@ a:hover, button:hover {
   transform: translateY(-50%);
   width: 14px;
   height: 14px;
-  background: url("../../img/section-title-logo.svg") no-repeat center/contain;
+  background: url("/suit-site/img/section-title-logo.svg") no-repeat center/contain;
 }
 @media screen and (max-width: 768px) {
   .body__title {

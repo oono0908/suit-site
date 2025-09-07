@@ -2,12 +2,12 @@
 @use "../global" as *;
 
 .mv{
-  background-image: url(/img/contact/contact-mv.jpg);
+  background-image: url(/suit-site/img/contact/contact-mv.jpg);
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
   @include mq("md"){
-    background-image: url(/img/contact/contact-mv-sp.jpg);
+    background-image: url(/suit-site/img/contact/contact-mv-sp.jpg);
   }
 }
 
