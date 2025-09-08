@@ -22,7 +22,7 @@ block main
             | 担当者が確認後、折り返しご連絡させていただきます。
           //- フォーム
           .contact__form-content
-            form.contact__form.form(action="mail.php" method="POST")
+            form.contact__form.form(action="mail.php" method="post")
               ul.form__lists
                 li.form__list
                   dl
@@ -59,3 +59,4 @@ block main
                 .contact__btn
                   input(type="submit" value="送信")
       include ../parts/_topBtn.pug
+

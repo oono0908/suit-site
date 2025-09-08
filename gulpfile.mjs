@@ -62,7 +62,7 @@ const sass_task = () => {
       cascade: false
       })
     ]))
-  .pipe(cleanCSS())
+  // .pipe(cleanCSS())
   .pipe(gulp.dest(dest.css))
   .pipe(browserSync.reload({stream:true}));
 }

@@ -262,7 +262,7 @@
 
 .service__title-btn{
   &::after{
-    width: 170px;
+    width: 100%;
     background-color: $skin;
     height: 1px;
     content: "";
@@ -294,9 +294,14 @@
   }
 }
 
+.service__cards::-webkit-scrollbar {
+ display:none;
+}
+
 .service__cards.is-active{
   display: grid;
 }
+
 
 .card__img-content{
   position: relative;
