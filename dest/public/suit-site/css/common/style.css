@@ -275,7 +275,7 @@ body.is-fixed {
   transform: translateY(-50%);
   width: 14px;
   height: 14px;
-  background: url("/suit-site/img/section-title-logo.svg") no-repeat center/contain;
+  background: url("/suit-site/img/common/section-title-logo.svg") no-repeat center/contain;
 }
 .section-title::after {
   position: absolute;
@@ -323,7 +323,7 @@ body.is-fixed {
   color: #141414;
 }
 .section-title--black::before {
-  background: url("/suit-site/img/section-title-logo-black.svg") no-repeat center/contain;
+  background: url("/suit-site/img/common/section-title-logo-black.svg") no-repeat center/contain;
 }
 .section-title--black::after {
   color: #141414;
