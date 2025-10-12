@@ -26,11 +26,11 @@ const src = {
 };
  
 const dest = {
-  root: './dest/public/',
-  pug: './dest/public/suit-site/',
-  css: './dest/public/suit-site/css/',
-  img: './dest/public/suit-site/img/',
-  js: './dest/public/suit-site/js/'
+  root: './dest/',
+  pug: './dest/suit-site/',
+  css: './dest/suit-site/css/',
+  img: './dest/suit-site/img/',
+  js: './dest/suit-site/js/'
 };
 
 const img_task = () => (

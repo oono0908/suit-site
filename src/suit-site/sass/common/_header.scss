@@ -11,7 +11,7 @@ body.is-fixed{
 .header{
   height: 95px;
   position: fixed;
-  z-index: 50;
+  z-index: $header;
   width: 100%;
   top: 0;
   left: 0;
@@ -78,7 +78,8 @@ body.is-fixed{
   height: 16px;
   position: relative;
   margin-right: 15px;
-  z-index: 100;
+  z-index: $hamberger;
+  cursor: pointer;
 }
 
 .hamberger span{
@@ -129,7 +130,7 @@ body.is-fixed{
   top: 0;
   left: 0;
   display: none;
-  z-index: 150;
+  z-index: $drawer;
 }
 
 .drawer__inner{
@@ -149,7 +150,6 @@ body.is-fixed{
   width: 100%;
   font-family: "Cormorant", sans-serif;
   position: relative;
-  margin-left: 10px;
   &::after{
     content: "";
     position: absolute;

@@ -33,7 +33,7 @@ body.is-fixed {
 .header {
   height: 95px;
   position: fixed;
-  z-index: 50;
+  z-index: 100;
   width: 100%;
   top: 0;
   left: 0;
@@ -115,7 +115,8 @@ body.is-fixed {
   height: 16px;
   position: relative;
   margin-right: 15px;
-  z-index: 100;
+  z-index: 300;
+  cursor: pointer;
 }
 
 .hamberger span {
@@ -170,7 +171,7 @@ body.is-fixed {
   top: 0;
   left: 0;
   display: none;
-  z-index: 150;
+  z-index: 200;
 }
 
 .drawer__inner {
@@ -199,7 +200,6 @@ body.is-fixed {
   width: 100%;
   font-family: "Cormorant", sans-serif;
   position: relative;
-  margin-left: 10px;
 }
 .drawer__link::after {
   content: "";
@@ -380,7 +380,7 @@ body.is-fixed {
   position: fixed;
   bottom: 100px;
   right: 50px;
-  z-index: 150;
+  z-index: 100;
   cursor: pointer;
   border-radius: 50%;
   background-color: #F9F2E5;
