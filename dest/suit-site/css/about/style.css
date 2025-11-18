@@ -338,6 +338,7 @@ img {
 @media screen and (max-width: 768px) {
   .modal__inner {
     padding: 14px;
+    width: 90%;
   }
 }
 
@@ -374,12 +375,11 @@ img {
 
 .map__img {
   max-width: 412px;
-  aspect-ratio: 412/412;
+  aspect-ratio: 1/1;
 }
 @media screen and (max-width: 768px) {
   .map__img {
-    max-width: 240px;
-    aspect-ratio: 240/240;
+    max-width: 100%;
   }
 }
 
