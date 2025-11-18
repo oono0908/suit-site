@@ -23,6 +23,13 @@ a:hover, button:hover {
   opacity: 0.7;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .mv {
   background-image: url(/suit-site/img/contact/contact-mv.jpg);
   background-size: cover;

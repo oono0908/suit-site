@@ -3,11 +3,11 @@ header.header.js-header
     if page === "top"
       a(href="./index.html")
         h1.header__title
-          img.header-title__img(src='/suit-site/img/common/title.svg', alt='タイトル')
+          img.header-title__img(src='/suit-site/img/common/title.svg', alt='タイトル' loading="lazy")
     else
       a(href="../index.html")
         h1.header__title
-          img.header-title__img(src='/suit-site/img/common/title.svg', alt='タイトル')
+          img.header-title__img(src='/suit-site/img/common/title.svg', alt='タイトル' loading="lazy")
     ul.header__items.md-none
       if page === "top"
         li.header__item
@@ -25,7 +25,7 @@ header.header.js-header
           a.header__link.js-header__link(href="../index.html#news") News
     .header__contact-btn.btn.md-none
       if page === "contact"
-        a.header__contact-link(href="#contact") Contact
+        a.header__contact-link(href="#") Contact
       else if page === "top"
         a.header__contact-link(href="./contact/index.html#contact") Contact
       else
@@ -53,7 +53,7 @@ header.header.js-header
               a.drawer__link(href="../index.html#news") News
         .drawer__contact-btn.btn
           if page === "contact"
-            a.drawer__contact-link(href="#contact") Contact
+            a.drawer__contact-link(href="#") Contact
           else if page === "top"
             a.drawer__contact-link(href="./contact/index.html#contact") Contact
           else

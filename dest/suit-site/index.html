@@ -28,14 +28,17 @@
     <link rel="stylesheet" href="/suit-site/css/common/style.css" type="text/css">
     <link rel="stylesheet" href="/suit-site/css/top/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="/suit-site/js/top/script.js" defer></script>
   </head>
   <body>
+    <div id="loadingOverlay">
+      <div class="spinner"></div>
+    </div>
     <header class="header js-header">
       <div class="header__inner"><a href="./index.html">
-          <h1 class="header__title"><img class="header-title__img" src="/suit-site/img/common/title.svg" alt="タイトル"></h1></a>
+          <h1 class="header__title"><img class="header-title__img" src="/suit-site/img/common/title.svg" alt="タイトル" loading="lazy"></h1></a>
         <ul class="header__items md-none">
           <li class="header__item"><a class="header__link js-header__link" href="#about">About</a></li>
           <li class="header__item"><a class="header__link js-header__link" href="#service">Service</a></li>
@@ -64,17 +67,17 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="/suit-site/img/top/mv01.jpg" media="(min-width: 768px)" type="image/jpg"><img src="/suit-site/img/top/mv-sp01.jpg" alt="男性のスーツ姿１">
+                  <source srcset="/suit-site/img/top/mv01.jpg" media="(min-width: 768px)" type="image/jpg"><img src="/suit-site/img/top/mv-sp01.jpg" alt="男性のスーツ姿１" loading="lazy">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="/suit-site/img/top/mv02.jpg" media="(min-width: 768px)" type="image/jpg"><img src="/suit-site/img/top/mv-sp02.jpg" alt="男性のスーツ姿２">
+                  <source srcset="/suit-site/img/top/mv02.jpg" media="(min-width: 768px)" type="image/jpg"><img src="/suit-site/img/top/mv-sp02.jpg" alt="男性のスーツ姿２" loading="lazy">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="/suit-site/img/top/mv03.jpg" media="(min-width: 768px)" type="image/jpg"><img src="/suit-site/img/top/mv-sp03.jpg" alt="男性のスーツ姿３">
+                  <source srcset="/suit-site/img/top/mv03.jpg" media="(min-width: 768px)" type="image/jpg"><img src="/suit-site/img/top/mv-sp03.jpg" alt="男性のスーツ姿３" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -94,7 +97,7 @@
           <div class="about__contents">
             <div class="about__content-img">
               <picture>
-                <source srcset="/suit-site/img/top/about-img-sp.png" media="(max-width: 768px)"><img src="/suit-site/img/top/about-img.png" alt="スーツの着付けをしている様子" width="360" height="500" loading="lazy" decoding="async">
+                <source srcset="/suit-site/img/top/about-img-sp.png" media="(max-width: 768px)"><img src="/suit-site/img/top/about-img.png" alt="スーツの着付けをしている様子" width="360" height="500" loading="lazy">
               </picture>
             </div>
             <p class="about__content-text">上質を追求する<br class="md-show">老舗として<br>その歴史と<br class="md-show">誇りを持って<br><span class="about__content-text--small">お客様と</span><br class="md-show"><span class="about__content-text--small">向き合っています</span></p>
@@ -114,7 +117,7 @@
             <li class="service__card card">
               <div class="card__img-content">
                 <picture>
-                  <source srcset="/suit-site/img/top/service-img01-sp.jpg" media="(min-width: 768px)"><img src="/suit-site/img/top/service-img01.jpg" alt="カジュアルスーツ" width="330" height="370" loading="lazy" decoding="async">
+                  <source srcset="/suit-site/img/top/service-img01-sp.jpg" media="(min-width: 768px)"><img src="/suit-site/img/top/service-img01.jpg" alt="カジュアルスーツ" width="330" height="370" loading="lazy">
                 </picture>
                 <div class="card__type">suit</div>
               </div>
@@ -126,7 +129,7 @@
             <li class="service__card card">
               <div class="card__img-content">
                 <picture>
-                  <source srcset="/suit-site/img/top/service-img02-sp.jpg" media="(max-width: 768px)"><img src="/suit-site/img/top/service-img02.jpg" alt="リクルートスーツ" width="330" height="370" loading="lazy" decoding="async">
+                  <source srcset="/suit-site/img/top/service-img02-sp.jpg" media="(max-width: 768px)"><img src="/suit-site/img/top/service-img02.jpg" alt="リクルートスーツ" width="330" height="370" loading="lazy">
                 </picture>
                 <div class="card__type">suit</div>
               </div>
@@ -138,7 +141,7 @@
             <li class="service__card card">
               <div class="card__img-content">
                 <picture>
-                  <source srcset="/suit-site/img/top/service-img03-sp.jpg" media="(max-width: 768px)"><img src="/suit-site/img/top/service-img03.jpg" alt="フォーマルスーツ" width="330" height="370" loading="lazy" decoding="async">
+                  <source srcset="/suit-site/img/top/service-img03-sp.jpg" media="(max-width: 768px)"><img src="/suit-site/img/top/service-img03.jpg" alt="フォーマルスーツ" width="330" height="370" loading="lazy">
                 </picture>
                 <div class="card__type">suit</div>
               </div>
@@ -152,7 +155,7 @@
             <li class="service__card card">
               <div class="card__img-content">
                 <picture>
-                  <source srcset="/suit-site/img/top/service-img04-sp.jpg" media="(max-width: 768px)"><img src="/suit-site/img/top/service-img04.jpg" alt="シューズ" width="330" height="370" loading="lazy" decoding="async">
+                  <source srcset="/suit-site/img/top/service-img04-sp.jpg" media="(max-width: 768px)"><img src="/suit-site/img/top/service-img04.jpg" alt="シューズ" width="330" height="370" loading="lazy">
                 </picture>
                 <div class="card__type">other</div>
               </div>
@@ -197,36 +200,36 @@
                 <div class="item__time">
                   <time datetime="2025-09-03">2025年9月3日</time>
                 </div>
-                <p class="item__text">お知らせ</p>
-                <p class="item__title">12月のお休みのお知らせ</p>
+                <p class="item__text">お知らせ</p><a class="news__link" href="#">
+                  <p class="item__title">12月のお休みのお知らせ</p></a>
               </li>
               <li class="news__item item">
                 <div class="item__time">
                   <time datetime="2025-08-23">2025年8月23日</time>
                 </div>
-                <p class="item__text">お知らせ</p>
-                <p class="item__title">オンラインストアを開設しました</p>
+                <p class="item__text">お知らせ</p><a class="news__link" href="#">
+                  <p class="item__title">オンラインストアを開設しました</p></a>
               </li>
               <li class="news__item item">
                 <div class="item__time">
                   <time datetime="2025-08-16">2025年8月16日</time>
                 </div>
-                <p class="item__text">イベント</p>
-                <p class="item__title">創業80周年記念特別割引適用</p>
+                <p class="item__text">イベント</p><a class="news__link" href="#">
+                  <p class="item__title">創業80周年記念特別割引適用</p></a>
               </li>
               <li class="news__item item">
                 <div class="item__time">
                   <time datetime="2025-08-11">2025年8月11日</time>
                 </div>
-                <p class="item__text">お知らせ</p>
-                <p class="item__title">12月のお休みのお知らせ</p>
+                <p class="item__text">お知らせ</p><a class="news__link" href="#">
+                  <p class="item__title">12月のお休みのお知らせ</p></a>
               </li>
               <li class="news__item item">
                 <div class="item__time">
                   <time datetime="2025-08-05">2025年8月5日</time>
                 </div>
-                <p class="item__text">イベント</p>
-                <p class="item__title">11月23日～リニューアルオープンイベントがはじまります</p>
+                <p class="item__text">イベント</p><a class="news__link" href="#">
+                  <p class="item__title">11月23日～リニューアルオープンイベントがはじまります</p></a>
               </li>
             </ul>
           </div>
@@ -240,7 +243,7 @@
               <p>お気軽にご相談ください</p><a class="contact__btn btn btn--arrow" href="./contact/index.html">お問い合わせはこちら</a>
             </div>
           </div>
-          <div class="contact__img"><img src="/suit-site/img/common/contact-img.jpg" alt="suitを採寸するための鋏とメジャー" width="670" height="400"></div>
+          <div class="contact__img"><img src="/suit-site/img/common/contact-img.jpg" alt="suitを採寸するための鋏とメジャー" width="670" height="400" loading="lazy"></div>
         </div>
       </section>
       <div class="top-btn js-top-btn"><img class="top-btn__img" src="/suit-site/img/common/Top-btn.svg" alt="トップに戻るボタン"></div>

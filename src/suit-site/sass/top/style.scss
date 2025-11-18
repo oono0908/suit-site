@@ -155,19 +155,20 @@
 }
 
 .about__content-img{
-  width: 360px;
-  height: 500px;
+  max-width: 360px;
+  aspect-ratio: 360 / 500;
   @include mq("md"){
-   width: 240px;
-   height: 333px;
+   max-width: 240px;
+   aspect-ratio: 240 / 333;
    margin: 50px auto 0;
   }
 }
 
-.about__content-img img{
-  height: 100%;
-  width: 100%;
-}
+// .about__content-img img{
+//   height: 100%;
+//   width: 100%;
+//   object-fit: cover;
+// }
 
 .about__content-text{
   font-size: 22px;
@@ -305,17 +306,12 @@
 
 .card__img-content{
   position: relative;
-  width: 330px;
-  height: 370px;
+  max-width: 330px;
+  aspect-ratio: 330 / 370;
   @include mq("md"){
-    width: 250px;
-    height: 280px;
+    max-width: 250px;
+    aspect-ratio: 250 / 280;
   }
-}
-
-.card__img-content img{
-  width: 100%;
-  height: 100%;
 }
 
 .card__type{
@@ -332,6 +328,7 @@
   font-family:  "Cormorant", sans-serif;
   letter-spacing: 0.05em;
 }
+
 .service__body{
   padding: 20px 15px;
   background-color: $gray2;
@@ -421,6 +418,9 @@
   color: $gray;
   font-family: "Noto Sans Jp",sans-serif;
   margin-left: 30px;
+  @include mq("md"){
+    margin-left: 0;
+  }
 }
 
 
